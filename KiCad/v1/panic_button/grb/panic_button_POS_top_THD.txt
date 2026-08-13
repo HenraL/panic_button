@@ -1,0 +1,11 @@
+### Module positions - created on 2025-04-21 04:11
+### Printed by pcb_positions plugin
+## Unit = mm, Angle = deg.
+## Pcb Height 0.000mm, Pcb Width 0.000mm [based on Edge bounding box]
+## Side : top
+## Board Aux Origin: 0.000mm ,0.000mm
+# Ref         Val                 Package                       PosX       PosY       Pin1_PosX  Pin1_PosY    Rot     Side      Type
+REF**         JST_EH_B2B-EH-A_1.. JST_EH_B2B-EH-A_1x02_P2.50m.. 17.0000    -149.0000  17.0000    -149.0000    -9.0    top       THD
+REF**         SW_Slide_SPDT_Str.. SW_Slide_SPDT_Straight_CK_O.. 73.4000    -147.0000  73.4000    -147.0000     0.0    top       THD
+REF**         BatteryHolder_Key.. BatteryHolder_Keystone_2479.. 64.5000    -188.2000  64.5000    -188.2000    18.0    top       THD
+## End

@@ -41,3 +41,13 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+
+# No temp file
+*tmp*
+
+# No environments
+*env*
+
+# No pycache
+*.py[cod]

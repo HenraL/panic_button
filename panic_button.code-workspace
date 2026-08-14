@@ -1,0 +1,56 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"asperheader.extensionIgnore": [
+			"*.code-workspace",
+			"*.json"
+		],
+		"asperheader.promptToCreateIfMissing": true,
+		"asperheader.headerLogo": [
+			"              @@@@@@@@@",
+			"           @@@@       @@@@",
+			"          @@  @@@@@@@@@  @@",
+			"            @@@  @@@  @@@",
+			"              @@@@@@@@@",
+			"              @@ @@@ @@",
+			"                @@@@@",
+			"                  @",
+			"                 @@@",
+			"                @- #@",
+			"                @: @@",
+			"                 @ @",
+			"                 @ @",
+			"                 @ @",
+			"                -@ @:",
+			"                =@ @*",
+			"                ## -#",
+			"              %@@@@%@@@",
+			"              @       @@",
+			"           -@%@@@@#%@@@@@+",
+			"        @@%+             =%@%#",
+			"     =@@.                    @@#",
+			"    %@:                       *@@-",
+			"  *@*                           *%%",
+			" #@=         .   +*=             +@%",
+			" @*         :@@@@+-+@@@=          *@",
+			"%@          @@-        @@%         @@",
+			"%@         @%  %@@-@@@  #@         @@",
+			"@+        %@= @@     @@  @@        +@",
+			"@+        *@- @@     @@ -@%        +@",
+			"%@         @%  =@@@@@#  #@         @@",
+			"*@:         @@%       *@@+        :@%",
+			" @#           @%@*+@@%@#          #@",
+			" #@%                           . #@*",
+			"   @%                           %@",
+			"    @%@                       @@%",
+			"     -@@%                   #@@=",
+			"        *@@@             @@@#",
+			"            @%@@@@@@@@@@@+"
+		],
+		"asperheader.projectDescription": "A small panic beacon: reports its position to a server, falls back to SMS when unreachable, and advertises BLE (Find My-style) so phones can interact with it without an app."
+	}
+}

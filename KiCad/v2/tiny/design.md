@@ -1,3 +1,58 @@
+<!-- 
+-- +==== BEGIN AsperHeader =================+
+-- LOGO:
+--               @@@@@@@@@
+--            @@@@       @@@@
+--           @@  @@@@@@@@@  @@
+--             @@@  @@@  @@@
+--               @@@@@@@@@
+--               @@ @@@ @@
+--                 @@@@@
+--                   @
+--                  @@@
+--                 @- #@
+--                 @: @@
+--                  @ @
+--                  @ @
+--                  @ @
+--                 -@ @:
+--                 =@ @*
+--                 ## -#
+--               %@@@@%@@@
+--               @       @@
+--            -@%@@@@#%@@@@@+
+--         @@%+             =%@%#
+--      =@@.                    @@#
+--     %@:                       *@@-
+--   *@*                           *%%
+--  #@=         .   +*=             +@%
+--  @*         :@@@@+-+@@@=          *@
+-- %@          @@-        @@%         @@
+-- %@         @%  %@@-@@@  #@         @@
+-- @+        %@= @@     @@  @@        +@
+-- @+        *@- @@     @@ -@%        +@
+-- %@         @%  =@@@@@#  #@         @@
+-- *@:         @@%       *@@+        :@%
+--  @#           @%@*+@@%@#          #@
+--  #@%                           . #@*
+--    @%                           %@
+--     @%@                       @@%
+--      -@@%                   #@@=
+--         *@@@             @@@#
+--             @%@@@@@@@@@@@+
+-- /STOP
+-- PROJECT: AsperHeader
+-- FILE: design.md
+-- CREATION DATE: 14-08-2026
+-- LAST Modified: 2:58:44 14-08-2026
+-- DESCRIPTION:
+-- A small panic beacon: reports its position to a server, falls back to SMS when unreachable, and advertises BLE (Find My-style) so phones can interact with it without an app.
+-- /STOP
+-- COPYRIGHT: (c) Asperguide
+-- PURPOSE: This is the file containing the intended desing of the circuit and why.
+-- // AR
+-- +==== END AsperHeader =================+
+-->
 # Design notes — panic_button_tiny (KiCad v2, "tiny" variant)
 
 Working document for ideas, decisions, and open questions around the circuit. This is the
@@ -65,6 +120,27 @@ Concretely the modem must provide: **a GNSS position fix, SMS, and HTTP/HTTPS + 
   interrupt, panic button, or periodic heart-beat timer.
 - Each position report is a ~2 A burst for a few seconds — bulk caps on the modem rail matter
   as much as the cell.
+
+## Component review (14-08-2026)
+
+BOM checked against the target (< $50 excl. IoT plan) — still feasible at ~$20–46. Picks and
+why:
+
+- **Antenna for the C3**: the bare chip has no antenna in/on it (dev boards like the AirM2M
+  Core / SuperMini carry their own PCB antenna). The tiny needs a **2.4 GHz SMD ceramic chip
+  antenna (2450AT43A100-class) + LC matching network**, kept close to the RF pad / feed.
+- **Modem stays SIM7670G**: cheaper Cat1 parts (e.g. A7670E / SIM7600-family variants) drop
+  GNSS, which fails the hard spec (GNSS + SMS + HTTP/MQTT in one part).
+- **Charger: TP4054** (SOT-23-5) instead of TP4056/IP5306 — smallest footprint, right current
+  class; TP4056 only if we want the CHRG/STDBY LED pins; IP5306 rejected (5 V boost PMIC,
+  wrong tool, bigger).
+- **Accelerometer: LIS2DW12** (2×2 mm, ~7 µA). BMA400 as an alternative only if autonomous
+  activity detection ever matters (10 µA, slightly pricier).
+- **Modem rail**: low-quiescent boost in the ~1 A class (TPS61099-like) plus bulk caps covers
+  the 2 A TX bursts; a higher-current part (TPS61023-like) is the headroom option. Both to be
+  confirmed against the SIM7670G's burst profile + load switch for sleep.
+- **USB-C charge-only**: 4/6-pin receptacle + 5.1 kΩ CC pull-downs; no D+/D- (tiny flashes
+  via UART0 pads).
 
 ## Open questions
 

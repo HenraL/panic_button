@@ -15,7 +15,9 @@ Same family as the earlier v1/v2 dev designs, shrunk as far as practical.
 
 - **Tiny** = the smallest possible circuit, as arranged in `panic_button_tiny/`.
 - **Dev** = the tiny circuit + test infrastructure: test points, a testing array of buttons,
-  richer debug status LEDs, maybe an easier-to-mount C3 package. Functionally identical, same
+  richer debug status LEDs, and an **AirM2M Core ESP32-C3 module** as the easier-to-mount C3
+  (same ESP32-C3FH4 die as the tiny's bare QFN, castellated module, onboard USB-C/buttons/RGB
+  LED — Arduino framework supported). Functionally identical, same
   BOM family — any part dropped in tiny for footprint reasons is dropped in dev too. Dev
   extras only make the circuit easier to probe/debug; they never change what the circuit does.
 
@@ -44,6 +46,15 @@ Concretely the modem must provide: **a GNSS position fix, SMS, and HTTP/HTTPS + 
   triangulation as a fallback → POST to the server via HTTP(S) over LTE.
 - **"If movement"** requires a MEMS accelerometer with a wake-on-motion interrupt to wake the
   MCU from deep sleep — neither the ESP32-C3 nor the modem can sense motion.
+
+## Firmware (PlatformIO)
+
+- **One shared codebase** in `platformio/` — the same firmware for whatever PCB it ends up on.
+- The `board = ...` declaration in `platformio.ini` acts mainly as a **RAM/flash + build-flag
+  reference** (e.g. an ESP32-C3 board def) — it is not tied to our physical boards or their
+  components.
+- Less desirable alternative, still available: define **our own board entry** in the PIO
+  config (custom memory/flags) instead of borrowing a stock one.
 
 ## Power / sleep notes
 

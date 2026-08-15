@@ -1,0 +1,3 @@
+[submodule "KiCad/KiCad_libraries/my_kicad_mods"]
+	path = KiCad/KiCad_libraries/my_kicad_mods
+	url = git@github.com:HenraL/my_kicad_mods.git

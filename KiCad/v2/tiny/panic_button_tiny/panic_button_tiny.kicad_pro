@@ -661,13 +661,37 @@
         "uuid": "c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601"
       }
     ],
-    "used_designators": "#PWR1-6,R1-2,J1,U1-4",
+    "used_designators": "E1,#PWR1-6,R1-2,J1-2,U1-5",
     "variants": []
   },
   "sheets": [
     [
       "c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601",
       "panic_button_tiny"
+    ],
+    [
+      "264a0769-bcc3-4bdf-b2a9-76b0d2a047ac",
+      "network_and_gps"
+    ],
+    [
+      "87783f59-2161-40ec-a051-fa9ad8b0290b",
+      "radio_layout"
+    ],
+    [
+      "808748e4-79b9-4201-99f3-f752df4bbb35",
+      "accelerometer"
+    ],
+    [
+      "bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c",
+      "power_input"
+    ],
+    [
+      "5fcd7ab2-c492-450d-9345-ebba8273bb1f",
+      "modem_rail"
+    ],
+    [
+      "525ab16f-d6f3-4728-a011-f4f1ced9fd5e",
+      "brains"
     ]
   ],
   "text_variables": {},

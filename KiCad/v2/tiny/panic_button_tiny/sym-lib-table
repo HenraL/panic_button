@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "2450AT18A0100001E") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/2450AT18A0100001E/2450AT18A0100001E.kicad_sym") (options "") (descr ""))
+	(lib (name "easyeda2kicad") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/manually_recreated/SIM7670G-LNGV/easyeda2kicad.kicad_sym") (options "") (descr ""))
+)

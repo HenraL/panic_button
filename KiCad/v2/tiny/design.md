@@ -44,12 +44,12 @@
 -- PROJECT: AsperHeader
 -- FILE: design.md
 -- CREATION DATE: 14-08-2026
--- LAST Modified: 2:58:44 14-08-2026
+-- LAST Modified: 14:21:28 14-08-2026
 -- DESCRIPTION:
 -- A small panic beacon: reports its position to a server, falls back to SMS when unreachable, and advertises BLE (Find My-style) so phones can interact with it without an app.
 -- /STOP
 -- COPYRIGHT: (c) Asperguide
--- PURPOSE: This is the file containing the intended desing of the circuit and why.
+-- PURPOSE: This is the file containing the intended design of the circuit and why.
 -- // AR
 -- +==== END AsperHeader =================+
 -->

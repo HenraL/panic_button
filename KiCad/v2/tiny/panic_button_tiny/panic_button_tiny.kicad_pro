@@ -661,7 +661,7 @@
         "uuid": "c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601"
       }
     ],
-    "used_designators": "E1,#PWR1-6,R1-2,J1-2,U1-5",
+    "used_designators": "E1,Y1,#PWR1-7,R1-2,J1-2,U1-7",
     "variants": []
   },
   "sheets": [
@@ -692,6 +692,10 @@
     [
       "525ab16f-d6f3-4728-a011-f4f1ced9fd5e",
       "brains"
+    ],
+    [
+      "4988fc48-ac14-475f-a329-fd119eb80de7",
+      "Li-ion charging handling"
     ]
   ],
   "text_variables": {},

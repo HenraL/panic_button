@@ -2697,7 +2697,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0755d918-88a7-433f-b899-e0d3065b97c2")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 248.92 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2782,7 +2782,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/264a0769-bcc3-4bdf-b2a9-76b0d2a047ac"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -2800,7 +2800,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dba0d99f-4abe-478d-8905-10423016bad3")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 135.89 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3261,7 +3261,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/264a0769-bcc3-4bdf-b2a9-76b0d2a047ac"
-					(reference "U5")
+					(reference "U1")
 					(unit 1)
 				)
 			)

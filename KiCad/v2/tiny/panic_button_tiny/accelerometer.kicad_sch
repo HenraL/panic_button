@@ -337,7 +337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21e52298-c4a3-4e82-b0d7-b39ce205f85f")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 41.5133 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -432,7 +432,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/808748e4-79b9-4201-99f3-f752df4bbb35"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)

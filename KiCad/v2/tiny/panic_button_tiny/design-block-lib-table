@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "2450AT18A0100001E.3dshape") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/2450AT18A0100001E/2450AT18A0100001E.3dshape") (options "") (descr ""))
 	(lib (name "easyeda2kicad.pretty") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/manually_recreated/SIM7670G-LNGV/easyeda2kicad.pretty") (options "") (descr ""))
+	(lib (name "C3E40000121010X.3dshape") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/C3E40000121010X/C3E40000121010X.3dshape") (options "") (descr ""))
 )

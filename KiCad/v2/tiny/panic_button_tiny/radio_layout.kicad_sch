@@ -270,6 +270,24 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -487,6 +505,9 @@
 		)
 		(pin "1"
 			(uuid "a1f12502-f762-4954-8ea1-7420ca6b4c15")
+		)
+		(pin "2"
+			(uuid "f445b759-512d-4049-9750-8ddb93b1e8bd")
 		)
 		(instances
 			(project "panic_button_tiny"

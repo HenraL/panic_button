@@ -100,8 +100,13 @@ the hard way (wrong pin geometry → wrongly claimed nets were "dead-ended"):
   inside the schematic file itself.
 - **A connection exists only where a wire terminates exactly on a pin tip.**
   Absolute tip = instance `(at)` + pin `(at dx dy angle)` (+ `(length)` in the pin's
-  direction). Never declare a net "unconnected" or "dead-ending" without computing every
-  pin tip of the involved symbols against the wire endpoints.
+  direction). **Y sign flip: embedded symbol blocks are written in the library's Y-up
+  convention while the schematic plane is Y-down — the rendered tip offset is `(dx, -dy)`
+  (before rotation).** Skipping this flip mirrors every pin tip and wrongly "moves"
+  connections (this happened twice: crystal nets falsely reported on GPIO8/GPIO9 and a
+  falsely reported VDD3P3_CPU→GND short). Verify with the owner's UI, not with arithmetic
+  alone. Never declare a net "unconnected" or "dead-ending" without computing every pin
+  tip of the involved symbols against the wire endpoints.
 - **Pins are not placed on a strict grid.** Symbol authors leave uneven gaps to visually
   group related pins (power pins along one edge, XTAL pins grouped, GPIO runs, etc.) —
   e.g. XTAL_N may sit 500 mils away from its neighbor. Never infer a pin's identity or
@@ -112,9 +117,10 @@ the hard way (wrong pin geometry → wrongly claimed nets were "dead-ended"):
   Before concluding anything about current state, check file mtimes and the `~*.lck` lock
   files in the project dir; if KiCad is open with unsaved edits, ask the user to save
   first, then re-scan.
-- **The owner's display unit is mils** (1 mil = 0.0254 mm). Always quote coordinates in
-  **mils first** when discussing wiring (e.g. "pin 29 tip at (3150, 2400) mils = (80.01,
-  60.96) mm") — the owner does not convert on the fly.
+- **The owner's display unit is mils** (1 mil = 0.0254 mm) — switched to mm on 17-08-2026;
+  confirm the current unit each session. Always quote coordinates in **mils first** when
+  discussing wiring (e.g. "pin 29 tip at (3150, 2400) mils = (80.01, 60.96) mm") — the
+  owner does not convert on the fly.
 - **Reference designators drift.** The owner renumbers freely (caps C1/C2 → C2/C3, etc.);
   never assume designators persist between sessions — re-scan `Reference`/`Value` pairs
   before quoting them, and refer to the chip as `U5` (ESP32-C3), never "C3".

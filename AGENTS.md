@@ -84,6 +84,41 @@ A **panic beacon** — a small device (target: no bigger than a finger; a palm i
 - Firmware lives in `platformio/` and comes **after** the circuit planning — it is not a parallel effort.
 - Any virtual environment / tool environment goes in `bonus/`; throwaway scratch files go in `bonus/tmp/` (survives reboots, but treat it as disposable).
 
+## KiCad schematic verification (connection & pin checks)
+
+The schematic is the owner's working file — agents only *read* it, and must read it the way
+KiCad actually resolves it, or connection claims will be wrong. These rules were learned
+the hard way (wrong pin geometry → wrongly claimed nets were "dead-ended"):
+
+- **Pin coordinates come from the embedded symbols, never from external library copies.**
+  Each `.kicad_sch` embeds its own `(symbol "LIB:NAME_0_0" ...)` blocks with the pin
+  definitions; the instance `(at x y rot)` positions the whole thing. A copy of the same
+  symbol in another library (e.g. `my_kicad_mods/`) may have *different geometry* — and the
+  project resolves library names through the **global** sym-lib-table
+  (`~/.config/kicad/<ver>/sym-lib-table`) when the lib isn't in the project table (e.g.
+  `MCU_Espressif` → `${KICAD9_SYMBOL_DIR}`). Always extract pins from the embedded blocks
+  inside the schematic file itself.
+- **A connection exists only where a wire terminates exactly on a pin tip.**
+  Absolute tip = instance `(at)` + pin `(at dx dy angle)` (+ `(length)` in the pin's
+  direction). Never declare a net "unconnected" or "dead-ending" without computing every
+  pin tip of the involved symbols against the wire endpoints.
+- **KiCad writes the file only on save.** Scans reflect the last save, not the editor.
+  Before concluding anything about current state, check file mtimes and the `~*.lck` lock
+  files in the project dir; if KiCad is open with unsaved edits, ask the user to save
+  first, then re-scan.
+- **The owner's display unit is mils** (1 mil = 0.0254 mm). Always quote coordinates in mm
+  *and* mils when discussing wiring (e.g. "pin 29 tip at (80.01, 60.96) mm = (3150, 2400)
+  mils").
+- **Reference designators drift.** The owner renumbers freely (caps C1/C2 → C2/C3, etc.);
+  never assume designators persist between sessions — re-scan `Reference`/`Value` pairs
+  before quoting them, and refer to the chip as `U5` (ESP32-C3), never "C3".
+- Component pin numbers/names must also be read from the embedded blocks (e.g. the
+  C3E40000121010X crystal: pins 1+3 = XTAL, pins 2+4 = case GND), then cross-checked
+  against the symbol instance position.
+- Wiring/placement state of every sheet is tracked in `KiCad/v2/tiny/missing_components.md`
+  (checklist + pin-level wiring reference) — keep it in sync whenever the schematic state
+  changes, and verify claims against the current file before editing it.
+
 ## Golden Rules
 
 ### 1. `using` is banned

@@ -1312,7 +1312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a5953af-b78d-45e1-bb07-bd0ffff6430a")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR046"
 			(at 67.31 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -1372,7 +1372,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c"
-					(reference "#PWR04")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -1390,7 +1390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21f591a5-6d0f-4cd7-bf9f-03875edcc3cb")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR044"
 			(at 60.96 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -1450,7 +1450,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c"
-					(reference "#PWR02")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -1557,7 +1557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b9ed68a-849d-4b63-b9e7-d84958dcc2d1")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR045"
 			(at 71.12 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -1617,7 +1617,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c"
-					(reference "#PWR03")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -1726,7 +1726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af78c4d0-65a3-49da-81d3-9801f9468d46")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR043"
 			(at 34.29 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1786,7 +1786,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c"
-					(reference "#PWR01")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -1900,7 +1900,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed69b604-fa95-462e-b968-96ccff253ca6")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR047"
 			(at 153.67 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -1960,7 +1960,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c"
-					(reference "#PWR05")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)

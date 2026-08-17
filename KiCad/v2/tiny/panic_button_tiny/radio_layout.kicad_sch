@@ -894,7 +894,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Elektuur:L")
-		(at 60.96 31.75 0)
+		(at 60.96 31.75 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -905,25 +905,23 @@
 		(fields_autoplaced yes)
 		(uuid "1f315ca2-b1a9-4959-9d22-626e58d8a64d")
 		(property "Reference" "L1"
-			(at 63.5 30.4799 0)
+			(at 60.96 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "4.7nH"
-			(at 63.5 33.0199 0)
+			(at 60.96 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
@@ -960,7 +958,7 @@
 			)
 		)
 		(property "Indicator" "●"
-			(at 60.833 29.21 0)
+			(at 58.42 31.877 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -971,7 +969,7 @@
 			)
 		)
 		(property "Rating" "A"
-			(at 59.69 34.925 0)
+			(at 64.135 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1215,7 +1213,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Elektuur:C")
-		(at 76.2 31.75 0)
+		(at 33.02 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1225,8 +1223,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b442bc1-7c2c-436a-b439-ad63c5b6cc04")
-		(property "Reference" "C3"
-			(at 80.01 30.4799 0)
+		(property "Reference" "C1"
+			(at 36.83 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1237,7 +1235,7 @@
 			)
 		)
 		(property "Value" "1.2pF"
-			(at 80.01 33.0199 0)
+			(at 36.83 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1248,7 +1246,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 76.2 31.75 0)
+			(at 33.02 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1259,7 +1257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 31.75 0)
+			(at 33.02 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1270,7 +1268,7 @@
 			)
 		)
 		(property "Description" "capacitor, non-polarized/bipolar"
-			(at 76.2 31.75 0)
+			(at 33.02 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1281,7 +1279,7 @@
 			)
 		)
 		(property "Indicator" "+"
-			(at 74.93 28.575 0)
+			(at 31.75 31.115 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1292,7 +1290,7 @@
 			)
 		)
 		(property "Rating" "V"
-			(at 75.565 34.925 0)
+			(at 32.385 37.465 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1312,7 +1310,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/87783f59-2161-40ec-a051-fa9ad8b0290b"
-					(reference "C3")
+					(reference "C1")
 					(unit 1)
 				)
 			)

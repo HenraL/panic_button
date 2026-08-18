@@ -101,6 +101,21 @@ Concretely the modem must provide: **a GNSS position fix, SMS, and HTTP/HTTPS + 
   triangulation as a fallback → POST to the server via HTTP(S) over LTE.
 - **"If movement"** requires a MEMS accelerometer with a wake-on-motion interrupt to wake the
   MCU from deep sleep — neither the ESP32-C3 nor the modem can sense motion.
+- **BMS is a population toggle (19-08-2026).** The Li-ion subsheet always carries the
+  footprints — U7 (DW01A), U8 (8205A) and a 2-pad solder jumper (P_NEG ↔ GND, bridged by
+  default) — but only the bare-cell case populates them:
+  - Cell **with internal protection PCB** (typical 603050 pouch): jumper bridged, U7/U8
+    unpopulated. Zero cost, nothing to configure.
+  - **Bare cell** (no BMS): open the jumper, populate U7 + U8 → DW01A drives the 8205A
+    gates for overcharge / overdischarge / overcurrent protection.
+- **Reverse-polarity protection: one high-side P-FET (Q1 = Si2305CDS, SOT-23).** The
+  DW01A/8205A combo protects the cell, not a reversed plug — a reversed battery forward
+  biases every body diode and kills the charger. Q1 (source = SW4 output, drain = +BATT,
+  gate = GND) blocks that with zero drop. **Q2 (Si2301CDS) has no role — drop it.**
+- **Battery-status LEDs on the charger** (LED1 red = charging, LED2 green = charged, off the
+  TP4056 CHRG/STDBY open-drain outputs via R6/R7 1 kΩ) — wired, zero GPIOs, and the
+  "charge status on the LED" spec is satisfied without touching the ESP. A GPIO-driven
+  variant (drop Y2 → GPIO0/1) was considered and shelved as redundant.
 
 ## Firmware (PlatformIO)
 

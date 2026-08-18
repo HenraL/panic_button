@@ -387,6 +387,316 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "CTS3-32.768-12.5-20-R:CTS3-32.768-12.5-20-R"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Y"
+				(at -5.08 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "CTS3-32.768-12.5-20-R"
+				(at -5.08 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "CTS3-32.768-12.5-20-R:XTAL_CTS3-32.768-12.5-20-R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Crystal,3.2mm x 1.5mm,32.768KHz,12.5pF,-40-85C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Aker Technology USA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "0.65mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Package" "SMD-4 AKER"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/CTS3-32.768-12.5-20-R/Aker/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "PARTREV" "Oct. 21, 2018"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/CTS3-32.768-12.5-20-R/Aker/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "CTS3-32.768-12.5-20-R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Aker"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "CTS3-32.768-12.5-20-R_0_0"
+				(polyline
+					(pts
+						(xy -2.3368 2.54) (xy -2.3368 -2.54)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 2.54) (xy -1.397 -2.54)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 2.54) (xy 1.397 2.54)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.397 2.54) (xy 1.397 -2.54)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.397 -2.54) (xy -1.397 -2.54)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.3368 2.54) (xy 2.3368 -2.54)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Espressif:ESP32-C3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1079,6 +1389,350 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PCM_4ms_Resistor:10k_0402"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "10k_0402"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+				(at -2.54 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "10k, 1%, 1/16W, 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Specifications" "10k, 1%, 1/10W, 0402"
+				(at -2.54 -7.874 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Manufacturer" "Yageo"
+				(at -2.54 -9.398 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number" "RT0402FRE0710KL"
+				(at -2.54 -10.922 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Display" "10k"
+				(at 3.81 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer 2" "Yageo"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part Number 2" "RT0402DRE0710KL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "10k 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "10k_0402_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "10k_0402_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_SL_Capacitors:100nF_Ceramic"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "100nF_Ceramic"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100nF Ceramic Capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Ceramic Capacitor 104 100nF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "100nF_Ceramic_0_1"
+				(rectangle
+					(start -0.762 2.286)
+					(end -0.508 -2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.508 2.286)
+					(end 0.762 -2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "100nF_Ceramic_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2)
+					(name ""
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 2.54 0 180)
+					(length 2)
+					(name ""
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_SparkFun-Capacitor:22pF_0402_50V_5%"
 			(pin_numbers
 				(hide yes)
@@ -1513,28 +2167,287 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PCM_fab:Switch_Tactile_CnK"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Switch_Tactile_CnK"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_fab:Button_CnK_PTS636.0_6x3.5mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, C&K PTS636 SM25F SMTR LFS, Tactile Switch SPST-NO Top Actuated Surface Mount"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button button tactile spst single pole single throw PTS636 SM25F SMTR LFS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*Button?CnK*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Switch_Tactile_CnK_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
-		(at 58.42 63.5)
+		(at 24.13 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0460bf95-a663-44b5-bb83-43f15f270b7a")
 	)
 	(junction
-		(at 72.39 60.96)
+		(at 119.38 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1429844f-5be6-45a3-ae77-53ccab16ea7b")
+	)
+	(junction
+		(at 34.29 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1daed684-6887-420c-b81a-802c74b0d5f8")
+	)
+	(junction
+		(at 40.64 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2150aa7f-34fd-4b6e-b4a1-dd91643710c4")
+	)
+	(junction
+		(at 114.3 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23a2d442-6962-4bdc-813f-266461629aef")
+	)
+	(junction
+		(at 99.06 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "345985a5-3832-4693-a883-edaf5ca3cafa")
+	)
+	(junction
+		(at 49.53 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36cb6a50-77e7-46d9-8701-b6bab7aefebd")
+	)
+	(junction
+		(at 128.27 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "413861a9-0398-4126-982d-66bf48ff5fb7")
+	)
+	(junction
+		(at 109.22 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "595198b5-ffc8-43c1-a39c-e032a8bc487e")
+	)
+	(junction
+		(at 58.42 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68a61185-2617-4992-ac84-97525f7fa928")
+	)
+	(junction
+		(at 38.1 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "710c29ee-010d-40f3-b252-c2db464ae434")
 	)
 	(junction
-		(at 64.77 76.2)
+		(at 59.69 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "917f2d7f-b03d-4432-bef7-e2ba28bd5caa")
+	)
+	(junction
+		(at 153.67 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a145e58b-9351-4a30-9846-c89a41960685")
+	)
+	(junction
+		(at 128.27 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af71042f-4af9-4f89-a1b1-8ea9aa07df5e")
+	)
+	(junction
+		(at 30.48 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1ff8c0c-134b-4a2f-a2d4-348ed6a4f156")
 	)
+	(junction
+		(at 128.27 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5acf90a-d27b-49a6-91ed-1d66997219b3")
+	)
+	(junction
+		(at 104.14 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfeb584e-2fb6-4491-8199-c8c10af34a6d")
+	)
 	(wire
 		(pts
-			(xy 49.53 63.5) (xy 58.42 63.5)
+			(xy 15.24 82.55) (xy 24.13 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1544,7 +2457,27 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 60.96) (xy 67.31 60.96)
+			(xy 104.14 40.64) (xy 104.14 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "014a4ee8-e6c7-4db4-8c3f-59f8a6e1b19b")
+	)
+	(wire
+		(pts
+			(xy 58.42 68.58) (xy 54.61 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "103a042c-da94-408e-8cd1-8eaf1eceaaf5")
+	)
+	(wire
+		(pts
+			(xy 38.1 80.01) (xy 33.02 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1554,7 +2487,37 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 60.96) (xy 72.39 60.96)
+			(xy 153.67 48.26) (xy 153.67 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "189cfbb3-8027-4f48-ab24-95fa35068478")
+	)
+	(wire
+		(pts
+			(xy 128.27 30.48) (xy 128.27 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "205477fb-327f-476f-8e85-c7a2f1b7b42d")
+	)
+	(wire
+		(pts
+			(xy 109.22 40.64) (xy 114.3 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20c650da-0efd-4765-85ce-440b319f5009")
+	)
+	(wire
+		(pts
+			(xy 86.36 80.01) (xy 38.1 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1564,7 +2527,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 78.74) (xy 64.77 76.2)
+			(xy 30.48 97.79) (xy 30.48 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1574,7 +2537,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 76.2) (xy 72.39 76.2)
+			(xy 35.56 95.25) (xy 38.1 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1584,7 +2547,47 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 63.5) (xy 80.01 63.5)
+			(xy 60.96 77.47) (xy 60.96 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "308a9082-be24-4ced-b8c0-9b1f4f064fee")
+	)
+	(wire
+		(pts
+			(xy 49.53 78.74) (xy 53.34 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34fbb975-d7a3-4fe0-806c-163a73bc1e3b")
+	)
+	(wire
+		(pts
+			(xy 99.06 40.64) (xy 104.14 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462a78b6-41ac-4e94-98fe-d5d012621a8c")
+	)
+	(wire
+		(pts
+			(xy 40.64 68.58) (xy 44.45 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47bd5f22-65dd-464d-9d4a-5c3528146b8f")
+	)
+	(wire
+		(pts
+			(xy 24.13 82.55) (xy 86.36 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1594,17 +2597,107 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 19.05) (xy 92.71 22.86)
+			(xy 40.64 68.58) (xy 40.64 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d413ba0-3be3-40e2-ad0b-4165845d08e0")
+		(uuid "50a3fd1e-d502-43d6-ad24-d90879a5d7ee")
 	)
 	(wire
 		(pts
-			(xy 64.77 59.69) (xy 64.77 76.2)
+			(xy 128.27 22.86) (xy 128.27 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "541138a6-15a3-4c84-a010-8a582c3872a0")
+	)
+	(wire
+		(pts
+			(xy 59.69 54.61) (xy 86.36 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5527bf13-d638-4c34-923c-b3b118d492a8")
+	)
+	(wire
+		(pts
+			(xy 44.45 54.61) (xy 59.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57b875e5-a100-4642-8ec3-1485368b30ad")
+	)
+	(wire
+		(pts
+			(xy 40.64 86.36) (xy 40.64 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59274b0e-834e-45c4-b2e0-640c42a190de")
+	)
+	(wire
+		(pts
+			(xy 128.27 17.78) (xy 128.27 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59d537cb-edb0-4ebe-9b91-34d8b8e5e162")
+	)
+	(wire
+		(pts
+			(xy 114.3 35.56) (xy 114.3 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c594a94-637f-4c3e-b935-a499bc0479b9")
+	)
+	(wire
+		(pts
+			(xy 99.06 17.78) (xy 99.06 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "637f1534-b263-44c4-bc91-0da009429b8a")
+	)
+	(wire
+		(pts
+			(xy 114.3 40.64) (xy 119.38 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f35b97-d86c-4af9-af4b-e5cdb11f8f26")
+	)
+	(wire
+		(pts
+			(xy 153.67 52.07) (xy 168.91 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a8ea965-8341-4f4b-b5ad-9f4530a999e5")
+	)
+	(wire
+		(pts
+			(xy 30.48 78.74) (xy 30.48 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1614,7 +2707,27 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 76.2) (xy 58.42 76.2)
+			(xy 86.36 77.47) (xy 60.96 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73075918-4bda-407c-ac98-5aa1428ef687")
+	)
+	(wire
+		(pts
+			(xy 59.69 52.07) (xy 59.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79f4f0b1-b0a0-44f7-80ad-b1bbdce7aae2")
+	)
+	(wire
+		(pts
+			(xy 25.4 95.25) (xy 24.13 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1624,7 +2737,17 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 60.96) (xy 67.31 54.61)
+			(xy 104.14 22.86) (xy 104.14 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cbc4c7d-8a03-49e6-8ddb-23a74eadfeba")
+	)
+	(wire
+		(pts
+			(xy 33.02 80.01) (xy 33.02 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1634,7 +2757,37 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 76.2) (xy 58.42 63.5)
+			(xy 132.08 52.07) (xy 153.67 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eda4ee2-2bee-4add-8aae-3bbdf6fecd09")
+	)
+	(wire
+		(pts
+			(xy 104.14 17.78) (xy 128.27 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "950fbe99-475f-422b-9572-49425e8d94c3")
+	)
+	(wire
+		(pts
+			(xy 109.22 30.48) (xy 109.22 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a8e54f5-0223-4533-bed6-a4d1b53a611c")
+	)
+	(wire
+		(pts
+			(xy 24.13 95.25) (xy 24.13 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1644,7 +2797,67 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 73.66) (xy 102.87 77.47)
+			(xy 34.29 54.61) (xy 36.83 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d5d39b1-c47d-458a-8ffb-e7c6a7d28364")
+	)
+	(wire
+		(pts
+			(xy 119.38 40.64) (xy 119.38 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5dcbef1-2e97-4d24-8218-080881fc7dd1")
+	)
+	(wire
+		(pts
+			(xy 58.42 78.74) (xy 58.42 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6383da0-9117-4935-954a-8d175364b491")
+	)
+	(wire
+		(pts
+			(xy 140.97 35.56) (xy 128.27 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afed22be-687d-40cb-9fe9-e66ff9adcb40")
+	)
+	(wire
+		(pts
+			(xy 45.72 78.74) (xy 49.53 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0f670dd-3bf5-4ab0-976d-8343af8790f2")
+	)
+	(wire
+		(pts
+			(xy 109.22 40.64) (xy 109.22 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2a9c3e5-bf47-4550-b141-8b90783d14b3")
+	)
+	(wire
+		(pts
+			(xy 109.22 92.71) (xy 109.22 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1654,7 +2867,57 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 54.61) (xy 49.53 63.5)
+			(xy 58.42 74.93) (xy 58.42 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c16d37d5-4ab8-46d9-81d5-16c5423b30c8")
+	)
+	(wire
+		(pts
+			(xy 176.53 52.07) (xy 180.34 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2353e62-a957-4bc9-a5ec-90a853d24285")
+	)
+	(wire
+		(pts
+			(xy 99.06 40.64) (xy 99.06 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c48e0f06-e647-463b-81b2-2b789539befb")
+	)
+	(wire
+		(pts
+			(xy 58.42 74.93) (xy 86.36 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c69e8595-e983-4168-b004-d21f228e28b7")
+	)
+	(wire
+		(pts
+			(xy 109.22 22.86) (xy 128.27 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc6d6327-a3eb-435a-8a98-bfb7a089020d")
+	)
+	(wire
+		(pts
+			(xy 15.24 73.66) (xy 15.24 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1664,7 +2927,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 76.2) (xy 72.39 60.96)
+			(xy 38.1 95.25) (xy 38.1 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1674,7 +2937,47 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 54.61) (xy 64.77 54.61)
+			(xy 60.96 86.36) (xy 40.64 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d29a43ef-447e-4d34-aa68-0cc858e6ab48")
+	)
+	(wire
+		(pts
+			(xy 109.22 25.4) (xy 109.22 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0505580-9fd0-41d0-b5fc-669870ad2a1a")
+	)
+	(wire
+		(pts
+			(xy 104.14 40.64) (xy 109.22 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0784ef8-5ee8-4977-b10a-4f99bae8ae27")
+	)
+	(wire
+		(pts
+			(xy 114.3 30.48) (xy 128.27 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0a2da4b-c730-428b-aa35-c0170d2b0aba")
+	)
+	(wire
+		(pts
+			(xy 33.02 73.66) (xy 30.48 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1682,9 +2985,216 @@
 		)
 		(uuid "e68c47b2-89eb-43c6-8858-db6431f01562")
 	)
+	(wire
+		(pts
+			(xy 29.21 54.61) (xy 34.29 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea095479-3cfc-47a1-afb1-cd9abd29f546")
+	)
+	(wire
+		(pts
+			(xy 128.27 35.56) (xy 119.38 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1539c2c-8e12-4f7f-9a42-8f441b3b0eda")
+	)
+	(wire
+		(pts
+			(xy 114.3 40.64) (xy 114.3 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd1da920-ce24-4502-b925-45249fab1248")
+	)
+	(hierarchical_label "I2C (SDA)"
+		(shape input)
+		(at 86.36 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "01b105eb-93f5-47c5-b127-e70915fdd479")
+	)
+	(hierarchical_label "modem_status"
+		(shape input)
+		(at 86.36 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "11bd97e0-15e7-431e-ae34-3f7a267ceb53")
+	)
+	(hierarchical_label "I2C (SCL)"
+		(shape input)
+		(at 29.21 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2ffa68a6-5cb2-4cb0-8ec6-c7984cd82b37")
+	)
+	(hierarchical_label "Motion_wake"
+		(shape input)
+		(at 86.36 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "61a69957-a484-40e1-9c0d-646fbc437ac5")
+	)
+	(hierarchical_label "power-on_pulse"
+		(shape input)
+		(at 86.36 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "65c12aac-51b5-47a5-a5b0-2cd2e079ddd9")
+	)
+	(hierarchical_label "Battery_voltage_sense"
+		(shape input)
+		(at 86.36 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6b7f56f7-0af1-41fc-a970-6e76cf68a5d0")
+	)
+	(hierarchical_label "modem_rail_switch"
+		(shape input)
+		(at 86.36 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e42d744-7da5-4c7a-8c56-1e95f9acd610")
+	)
+	(hierarchical_label "AT UART (TXD)"
+		(shape input)
+		(at 86.36 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bdf36d97-3cb8-4311-bcd9-e42e5ecb77d4")
+	)
+	(hierarchical_label "AT UART (RXD)"
+		(shape input)
+		(at 86.36 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be71e291-fe16-4116-bc13-57c622a620ff")
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 163.83 48.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09fef4da-64a1-4fca-9c3f-3f67c3c2e134")
+		(property "Reference" "#PWR057"
+			(at 170.18 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 167.64 48.26 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a94ef57-a5e7-4a34-aaa2-999fe209680e")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:22pF_0402_50V_5%")
-		(at 67.31 76.2 90)
+		(at 33.02 95.25 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1695,7 +3205,7 @@
 		(fields_autoplaced yes)
 		(uuid "0a2990bd-db9c-4eef-9bc4-d26b5821633f")
 		(property "Reference" "C3"
-			(at 67.3163 64.77 90)
+			(at 33.0263 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1705,7 +3215,7 @@
 			)
 		)
 		(property "Value" "22pF"
-			(at 67.3163 67.31 90)
+			(at 33.0263 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1715,7 +3225,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Capacitor:C_0402_1005Metric"
-			(at 78.74 76.2 0)
+			(at 44.45 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1726,7 +3236,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 83.82 76.2 0)
+			(at 49.53 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1737,7 +3247,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 86.36 76.2 0)
+			(at 52.07 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1748,7 +3258,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-25012"
-			(at 81.28 76.2 0)
+			(at 46.99 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1759,7 +3269,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 67.3163 69.85 90)
+			(at 33.0263 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1769,7 +3279,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 67.3163 72.39 90)
+			(at 33.0263 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1794,8 +3304,168 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_SL_Capacitors:100nF_Ceramic")
+		(at 119.38 38.1 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cbf8778-b16e-47d9-ab48-44aa79c75e1d")
+		(property "Reference" "C9"
+			(at 123.19 36.8299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF_Ceramic"
+			(at 123.19 39.3699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 123.19 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF Ceramic Capacitor"
+			(at 119.38 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0bf4e1e0-991a-4254-9dbf-8c07e9776585")
+		)
+		(pin "1"
+			(uuid "4b4f330f-6aca-49df-ba0a-1e80965b41a2")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:3.3V")
+		(at 99.06 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22bf51e5-aede-4ca3-9cfb-f27dfc84ed22")
+		(property "Reference" "#PWR054"
+			(at 99.06 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 99.06 13.97 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3.3V\""
+			(at 99.06 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a63b29a-bb53-4f2a-8d82-6ef3abcc4b44")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:22pF_0402_50V_5%")
-		(at 62.23 76.2 90)
+		(at 27.94 95.25 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1806,7 +3476,7 @@
 		(fields_autoplaced yes)
 		(uuid "431a332f-b525-4fc3-93bd-52d9e6b8f5dc")
 		(property "Reference" "C2"
-			(at 62.2363 64.77 90)
+			(at 27.9463 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1816,7 +3486,7 @@
 			)
 		)
 		(property "Value" "22pF"
-			(at 62.2363 67.31 90)
+			(at 27.9463 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1826,7 +3496,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Capacitor:C_0402_1005Metric"
-			(at 73.66 76.2 0)
+			(at 39.37 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1837,7 +3507,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 78.74 76.2 0)
+			(at 44.45 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1848,7 +3518,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 81.28 76.2 0)
+			(at 46.99 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1859,7 +3529,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-25012"
-			(at 76.2 76.2 0)
+			(at 41.91 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1870,7 +3540,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 62.2363 69.85 90)
+			(at 27.9463 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1880,7 +3550,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 62.2363 72.39 90)
+			(at 27.9463 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1905,8 +3575,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 102.87 77.47 0)
+		(lib_id "PCM_SL_Capacitors:100nF_Ceramic")
+		(at 104.14 20.32 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1915,30 +3585,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a577b03e-4adc-42c7-9b55-c8c6aa9f3000")
-		(property "Reference" "#PWR050"
-			(at 102.87 83.82 0)
-			(hide yes)
+		(uuid "43f4ea81-bb62-4415-93fc-e02debf19301")
+		(property "Reference" "C6"
+			(at 107.95 19.0499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "GND"
-			(at 102.87 81.28 0)
+		(property "Value" "100nF_Ceramic"
+			(at 107.95 21.5899 90)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 102.87 77.47 0)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 107.95 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1949,7 +3620,237 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 77.47 0)
+			(at 104.14 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF Ceramic Capacitor"
+			(at 104.14 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d61301b1-066a-4bec-982c-14a08987045e")
+		)
+		(pin "1"
+			(uuid "b1f8795c-abc3-42e5-9cd7-0fde9d487d92")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_4ms_Resistor:10k_0402")
+		(at 40.64 54.61 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "71db71fd-68d9-45f4-9396-f6aacf97a404")
+		(property "Reference" "R3"
+			(at 42.164 56.896 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k_0402"
+			(at 40.64 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 27.94 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10k, 1%, 1/16W, 0603"
+			(at 40.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specifications" "10k, 1%, 1/10W, 0402"
+			(at 32.766 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 31.242 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number" "RT0402FRE0710KL"
+			(at 29.718 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Display" "10k"
+			(at 38.608 56.896 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer 2" "Yageo"
+			(at 40.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number 2" "RT0402DRE0710KL"
+			(at 40.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d8c60673-a94c-4dc3-8a69-c8069ba76b34")
+		)
+		(pin "1"
+			(uuid "258326c6-a470-413c-a596-8be3e920a475")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 140.97 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "790c3c46-7591-4064-834c-47e1e400cf1d")
+		(property "Reference" "#PWR056"
+			(at 140.97 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 39.37 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1960,7 +3861,737 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 86.36 0)
+			(at 140.97 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d46f692-808e-4953-a79a-8bfbcc23cd14")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:3.3V")
+		(at 34.29 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8363b4c8-e13e-45f9-819d-46727bcc1ea3")
+		(property "Reference" "#PWR058"
+			(at 34.29 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 34.29 50.8 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3.3V\""
+			(at 34.29 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45da5495-e51c-44bc-b272-ef8c94ea2d3c")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CTS3-32.768-12.5-20-R:CTS3-32.768-12.5-20-R")
+		(at 49.53 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b3c1764-4b05-4ce4-a97b-472f07d3aab1")
+		(property "Reference" "Y2"
+			(at 49.53 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CTS3-32.768-12.5-20-R"
+			(at 49.53 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CTS3-32.768-12.5-20-R:XTAL_CTS3-32.768-12.5-20-R"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Crystal,3.2mm x 1.5mm,32.768KHz,12.5pF,-40-85C"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Aker Technology USA"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.65mm"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 AKER"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CTS3-32.768-12.5-20-R/Aker/view-part/?ref=eda"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "Oct. 21, 2018"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CTS3-32.768-12.5-20-R/Aker/view-part/?ref=snap"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CTS3-32.768-12.5-20-R"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Aker"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "c67ad58e-d0b4-4b72-929c-e4573928b8d9")
+		)
+		(pin "1"
+			(uuid "fcb4f9bb-f31d-4da6-80c1-a1112b0825d9")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "Y2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-Capacitor:22pF_0402_50V_5%")
+		(at 55.88 78.74 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c518523-db65-42d6-b381-9ebf6d2b1b06")
+		(property "Reference" "C5"
+			(at 55.8863 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22pF"
+			(at 55.8863 69.85 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_SparkFun-Capacitor:C_0402_1005Metric"
+			(at 67.31 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
+			(at 72.39 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 74.93 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PROD_ID" "CAP-25012"
+			(at 69.85 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 55.8863 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 55.8863 74.93 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eadf2b6c-2186-4713-9c6b-2d668f854fd6")
+		)
+		(pin "2"
+			(uuid "e2872640-37a0-4076-ac70-8c152dfc75ff")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_fab:Switch_Tactile_CnK")
+		(at 54.61 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "97d322cf-f8b2-415f-832e-438ddbddf931")
+		(property "Reference" "SW1"
+			(at 54.61 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Switch_Tactile_CnK"
+			(at 54.61 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_fab:Button_CnK_PTS636.0_6x3.5mm"
+			(at 54.61 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
+			(at 54.61 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, C&K PTS636 SM25F SMTR LFS, Tactile Switch SPST-NO Top Actuated Surface Mount"
+			(at 54.61 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Boot"
+			(at 54.61 48.768 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5e87579-3664-4fd9-9fe1-ece700f694d2")
+		)
+		(pin "2"
+			(uuid "0f06f55e-1c3a-4683-bcab-22cd2af0e1e2")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Capacitors:100nF_Ceramic")
+		(at 109.22 27.94 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98bf9441-2e4c-4efd-b711-cd12798e9eea")
+		(property "Reference" "C7"
+			(at 113.03 26.6699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF_Ceramic"
+			(at 113.03 29.2099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 113.03 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF Ceramic Capacitor"
+			(at 109.22 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "be9dfa4f-de06-4bc0-9533-f055a22f1fab")
+		)
+		(pin "1"
+			(uuid "acab1550-eefc-4605-8d6c-f2244e733ead")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:3.3V")
+		(at 180.34 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a150505a-4bb9-4bf1-8847-237f4f8bc4cf")
+		(property "Reference" "#PWR059"
+			(at 180.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 180.34 48.26 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3.3V\""
+			(at 180.34 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a737c59-767c-4d93-9e88-1dc8001919df")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 109.22 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a577b03e-4adc-42c7-9b55-c8c6aa9f3000")
+		(property "Reference" "#PWR055"
+			(at 109.22 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 100.33 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1976,7 +4607,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR050")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -1984,7 +4615,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 64.77 78.74 0)
+		(at 30.48 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1994,8 +4625,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5bc2605-bd3a-43f9-985f-2730c7d92d96")
-		(property "Reference" "#PWR048"
-			(at 64.77 85.09 0)
+		(property "Reference" "#PWR051"
+			(at 30.48 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2006,7 +4637,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 82.55 0)
+			(at 30.48 101.6 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2016,7 +4647,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 78.74 0)
+			(at 30.48 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2027,7 +4658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 78.74 0)
+			(at 30.48 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2038,7 +4669,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 87.63 0)
+			(at 30.48 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2054,7 +4685,96 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR048")
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_fab:Switch_Tactile_CnK")
+		(at 158.75 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ab24855f-63e5-48ab-806b-c8730709b830")
+		(property "Reference" "SW2"
+			(at 158.75 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Switch_Tactile_CnK"
+			(at 158.75 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_fab:Button_CnK_PTS636.0_6x3.5mm"
+			(at 158.75 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
+			(at 158.75 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, C&K PTS636 SM25F SMTR LFS, Tactile Switch SPST-NO Top Actuated Surface Mount"
+			(at 158.75 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Reset"
+			(at 158.75 44.958 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99928c2f-56ab-44de-8f26-82de16a48fda")
+		)
+		(pin "2"
+			(uuid "5cb937f9-265c-4c6d-bac5-d75f9fe0be89")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -2062,7 +4782,7 @@
 	)
 	(symbol
 		(lib_id "C3E40000121010X:C3E40000121010X")
-		(at 57.15 54.61 0)
+		(at 22.86 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2073,7 +4793,7 @@
 		(fields_autoplaced yes)
 		(uuid "aee84188-1b62-41b9-830f-335896defe68")
 		(property "Reference" "Y1"
-			(at 57.15 44.45 0)
+			(at 22.86 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2083,7 +4803,7 @@
 			)
 		)
 		(property "Value" "C3E40000121010X"
-			(at 57.15 46.99 0)
+			(at 22.86 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2093,7 +4813,7 @@
 			)
 		)
 		(property "Footprint" "C3E40000121010X:XTAL_C3E40000121010X"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2105,7 +4825,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2116,7 +4836,7 @@
 			)
 		)
 		(property "Description" "C3E Series 40 MHz ▒10 ppm 12 pF -40 to +85 ░C SMT Microprocessor Crystal Unit"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2128,7 +4848,7 @@
 			)
 		)
 		(property "MF" "Aker Technology"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2140,7 +4860,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "0.75mm"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2152,7 +4872,7 @@
 			)
 		)
 		(property "Package" "SMD-4 Aker"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2164,7 +4884,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2176,7 +4896,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/C3E40000121010X/Aker/view-part/?ref=eda"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2188,7 +4908,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2200,7 +4920,7 @@
 			)
 		)
 		(property "PARTREV" "August 01, 2022"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2212,7 +4932,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/C3E40000121010X/Aker/view-part/?ref=snap"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2224,7 +4944,7 @@
 			)
 		)
 		(property "MP" "C3E40000121010X"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2236,7 +4956,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2248,7 +4968,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Aker"
-			(at 57.15 54.61 0)
+			(at 22.86 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2281,8 +5001,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_SparkFun-PowerSymbol:3.3V")
-		(at 92.71 19.05 0)
+		(lib_id "PCM_4ms_Resistor:10k_0402")
+		(at 172.72 52.07 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2290,10 +5010,19 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e82448a1-d193-4df8-b30c-c8808b49c55e")
-		(property "Reference" "#PWR049"
-			(at 92.71 22.86 0)
+		(uuid "c5c72fd3-bf12-4967-b87a-397fa72397a1")
+		(property "Reference" "R4"
+			(at 171.196 49.784 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k_0402"
+			(at 172.72 54.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2303,18 +5032,159 @@
 				)
 			)
 		)
-		(property "Value" "3.3V"
-			(at 92.71 15.24 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 185.42 54.61 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 92.71 19.05 0)
+		(property "Description" "10k, 1%, 1/16W, 0603"
+			(at 172.72 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specifications" "10k, 1%, 1/10W, 0402"
+			(at 180.594 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 182.118 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number" "RT0402FRE0710KL"
+			(at 183.642 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Display" "10k"
+			(at 174.752 49.784 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer 2" "Yageo"
+			(at 172.72 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number 2" "RT0402DRE0710KL"
+			(at 172.72 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e5c8e2fa-288e-4998-ae09-259339b4ae43")
+		)
+		(pin "1"
+			(uuid "8bab525b-0299-4e82-945b-272130693621")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Capacitors:100nF_Ceramic")
+		(at 114.3 33.02 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc43a737-e306-4d5f-9dc4-72914a02495a")
+		(property "Reference" "C8"
+			(at 118.11 31.7499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF_Ceramic"
+			(at 118.11 34.2899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 118.11 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2325,7 +5195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 19.05 0)
+			(at 114.3 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2335,8 +5205,89 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3.3V\""
-			(at 92.71 25.4 0)
+		(property "Description" "100nF Ceramic Capacitor"
+			(at 114.3 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8b89e420-7eba-4cfe-bebd-00ecf07d9deb")
+		)
+		(pin "1"
+			(uuid "bd73f72a-79e8-4160-a800-163b56cc5b8a")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 49.53 78.74 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3ea7f00-f078-4a5c-9157-102f8ebbc201")
+		(property "Reference" "#PWR053"
+			(at 49.53 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 74.93 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2347,12 +5298,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5eaa3037-e22f-43bc-a604-f71e858e03c4")
+			(uuid "5aedc82e-557f-4806-8667-0926f6898bb8")
 		)
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR049")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -2360,7 +5311,7 @@
 	)
 	(symbol
 		(lib_id "MCU_Espressif:ESP32-C3")
-		(at 102.87 48.26 0)
+		(at 109.22 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2371,7 +5322,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec7b77bd-47ad-4689-acd3-6317d43447e8")
 		(property "Reference" "U5"
-			(at 105.0133 73.66 0)
+			(at 111.3633 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2382,7 +5333,7 @@
 			)
 		)
 		(property "Value" "ESP32-C3"
-			(at 105.0133 76.2 0)
+			(at 111.3633 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2393,7 +5344,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm"
-			(at 103.378 48.26 0)
+			(at 109.728 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2404,7 +5355,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf"
-			(at 103.378 48.26 0)
+			(at 109.728 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2415,7 +5366,7 @@
 			)
 		)
 		(property "Description" "RF Module, ESP32 SoC, RISC-V, WiFi 802.11b/n/g, Bluetooth LE 5, QFN32"
-			(at 103.378 48.26 0)
+			(at 109.728 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2528,6 +5479,195 @@
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-Capacitor:22pF_0402_50V_5%")
+		(at 43.18 78.74 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5b2fefd-cb5f-407f-bf1b-39c9698d92e1")
+		(property "Reference" "C4"
+			(at 43.1863 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22pF"
+			(at 43.1863 69.85 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_SparkFun-Capacitor:C_0402_1005Metric"
+			(at 54.61 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
+			(at 59.69 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 62.23 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PROD_ID" "CAP-25012"
+			(at 57.15 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 43.1863 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 43.1863 74.93 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec137988-6751-4693-ab19-c3f8bdfb3ffe")
+		)
+		(pin "2"
+			(uuid "71e79f01-e02d-47a0-aa72-e71267adcbca")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 49.53 52.07 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbb60dad-31e7-4146-98a9-3dba4ee2340c")
+		(property "Reference" "#PWR052"
+			(at 43.18 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 52.07 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c2447f5-6303-4e62-9e29-445936229108")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)

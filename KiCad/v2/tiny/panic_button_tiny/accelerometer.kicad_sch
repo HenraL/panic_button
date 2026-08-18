@@ -573,6 +573,39 @@
 			(embedded_fonts no)
 		)
 	)
+	(hierarchical_label "Motion_wake"
+		(shape input)
+		(at 52.07 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34539d6e-d245-4068-8844-cfc2d81f47d3")
+	)
+	(hierarchical_label "I2C (SCL)"
+		(shape input)
+		(at 29.21 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4c8845a6-4887-4f3a-a98f-e1594b231689")
+	)
+	(hierarchical_label "I2C (SDA)"
+		(shape input)
+		(at 29.21 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c1f39f88-d6b0-48d1-a01d-d0ab10713ce2")
+	)
 	(symbol
 		(lib_id "Sensor_Motion:LIS2DE12")
 		(at 39.37 36.83 0)

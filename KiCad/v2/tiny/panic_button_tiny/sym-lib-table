@@ -4,4 +4,5 @@
 	(lib (name "easyeda2kicad") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/manually_recreated/SIM7670G-LNGV/easyeda2kicad.kicad_sym") (options "") (descr ""))
 	(lib (name "C3E40000121010X") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/C3E40000121010X/C3E40000121010X.kicad_sym") (options "") (descr ""))
 	(lib (name "8205A") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/8205A/8205A.kicad_sym") (options "") (descr ""))
+	(lib (name "CTS3-32.768-12.5-20-R") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/CTS3-32.768-12.5-20-R/CTS3-32.768-12.5-20-R.kicad_sym") (options "") (descr ""))
 )

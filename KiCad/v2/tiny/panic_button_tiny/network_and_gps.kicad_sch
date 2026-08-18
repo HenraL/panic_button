@@ -3199,6 +3199,61 @@
 		)
 		(uuid "fd8bf6be-8dd5-4167-ab40-137c3db84088")
 	)
+	(hierarchical_label "battery_voltage_sense"
+		(shape input)
+		(at 106.68 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "00493f3d-a19d-4a09-b1b7-be1a5c2bb0d9")
+	)
+	(hierarchical_label "UART RXD"
+		(shape input)
+		(at 106.68 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "68a7000e-d1d3-4b2e-b557-c2b86fc7d76f")
+	)
+	(hierarchical_label "power_on_pulse"
+		(shape input)
+		(at 106.68 24.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7f5a682f-e83d-4894-bdb2-9c3ff5392577")
+	)
+	(hierarchical_label "UART TXD"
+		(shape input)
+		(at 106.68 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "81a87e53-5b25-4b88-b9f8-14884b199f36")
+	)
+	(hierarchical_label "modem_status"
+		(shape input)
+		(at 165.1 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9b5d72f6-ef74-4039-9986-ebe815a44883")
+	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
 		(at 167.64 140.97 90)

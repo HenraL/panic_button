@@ -5,9 +5,249 @@
 	(uuid "c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 134.62 67.31) (xy 134.62 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc48b7b-366f-4cae-a77b-2009ac65a8d1")
+	)
+	(wire
+		(pts
+			(xy 209.55 72.39) (xy 209.55 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162c3b79-3f26-4067-a041-bcb7b735cdc0")
+	)
+	(wire
+		(pts
+			(xy 209.55 58.42) (xy 214.63 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eca3dfe-1e4b-4dc4-8e06-a21e8b493eaa")
+	)
+	(wire
+		(pts
+			(xy 193.04 78.74) (xy 193.04 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29da7f47-94c1-40da-9405-1db27c7ec3b7")
+	)
+	(wire
+		(pts
+			(xy 190.5 72.39) (xy 209.55 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29f48ff0-586e-40b0-85d5-77e6ec6b23d8")
+	)
+	(wire
+		(pts
+			(xy 134.62 73.66) (xy 135.89 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b5861f1-c0f0-4014-935b-0f16f58295e9")
+	)
+	(wire
+		(pts
+			(xy 137.16 76.2) (xy 137.16 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be0128d-22a2-4407-8602-7864d9e8c920")
+	)
+	(wire
+		(pts
+			(xy 123.19 102.87) (xy 128.27 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "340a5de7-e525-4e41-b098-592cdd74527c")
+	)
+	(wire
+		(pts
+			(xy 137.16 74.93) (xy 137.16 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fbb61a1-d226-42fa-85f5-0a24f90b0fd2")
+	)
+	(wire
+		(pts
+			(xy 212.09 74.93) (xy 212.09 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40dc6a63-5319-4dbd-9577-e976ec2c1be8")
+	)
+	(wire
+		(pts
+			(xy 195.58 74.93) (xy 212.09 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52eb9cf3-dfc8-492a-8b03-dd4d37a6e8ba")
+	)
+	(wire
+		(pts
+			(xy 139.7 67.31) (xy 139.7 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ad11162-d682-443d-bf1a-b623ed76eefe")
+	)
+	(wire
+		(pts
+			(xy 135.89 76.2) (xy 137.16 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "978e94e0-2da3-4d93-922c-519213d00a92")
+	)
+	(wire
+		(pts
+			(xy 212.09 63.5) (xy 214.63 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac74c7e4-908e-45d2-acec-d81282e20cd0")
+	)
+	(wire
+		(pts
+			(xy 193.04 73.66) (xy 210.82 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2f428ec-7205-4469-bf88-21b833f20ef7")
+	)
+	(wire
+		(pts
+			(xy 195.58 74.93) (xy 195.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf8ea9d3-b6b6-46b2-8c5e-4190d1615aea")
+	)
+	(wire
+		(pts
+			(xy 190.5 78.74) (xy 190.5 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc3697b-8837-4df4-a1d2-5086cebf63a5")
+	)
+	(wire
+		(pts
+			(xy 135.89 73.66) (xy 135.89 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d23cd32a-459d-40bb-9bd6-5541b6dee3f6")
+	)
+	(wire
+		(pts
+			(xy 144.78 67.31) (xy 144.78 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df2fd104-3ae1-427a-a6bf-eedc18daa4d4")
+	)
+	(wire
+		(pts
+			(xy 210.82 60.96) (xy 214.63 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df32dca7-bcd2-473b-b2b9-fc53f8503d17")
+	)
+	(wire
+		(pts
+			(xy 134.62 74.93) (xy 137.16 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e00b8583-f522-4183-a815-bf9b1e77a06a")
+	)
+	(wire
+		(pts
+			(xy 210.82 73.66) (xy 210.82 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e94a95c3-51cc-42e8-8da1-a0bc91be0dd2")
+	)
+	(wire
+		(pts
+			(xy 142.24 67.31) (xy 142.24 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea0753f4-e6db-48df-a1ff-d7315b90c33f")
+	)
+	(wire
+		(pts
+			(xy 134.62 78.74) (xy 134.62 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4b9b588-56e2-48bd-b6ec-37638f202b10")
+	)
 	(sheet
-		(at 215.9 115.57)
-		(size 49.53 31.75)
+		(at 129.54 30.48)
+		(size 69.85 36.83)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +262,7 @@
 		)
 		(uuid "264a0769-bcc3-4bdf-b2a9-76b0d2a047ac")
 		(property "Sheetname" "network_and_gps"
-			(at 215.9 114.8584 0)
+			(at 128.8284 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +273,7 @@
 			)
 		)
 		(property "Sheetfile" "network_and_gps.kicad_sch"
-			(at 215.9 147.9046 0)
+			(at 199.9746 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41,6 +281,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "UART RXD" input
+			(at 134.62 67.31 270)
+			(uuid "2b330313-49bd-4491-81de-3441da490233")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART TXD" input
+			(at 137.16 67.31 270)
+			(uuid "30353447-8de8-4f0f-a546-9466547502b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "battery_voltage_sense" input
+			(at 142.24 67.31 270)
+			(uuid "15bb18d7-a601-4df6-b174-f6a79a04c703")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "modem_status" input
+			(at 139.7 67.31 270)
+			(uuid "5182cad5-e1d4-42ee-aaea-575f56f4ee1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "power_on_pulse" input
+			(at 144.78 67.31 270)
+			(uuid "7a438a91-efac-4da9-89c9-74cd82160574")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -89,10 +379,177 @@
 				(justify left top)
 			)
 		)
+		(pin "AT UART (RXD)" input
+			(at 134.62 78.74 90)
+			(uuid "bbf9e7ff-755b-4a49-a6ee-592bb0cfd034")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AT UART (TXD)" input
+			(at 137.16 78.74 90)
+			(uuid "cff7d977-d39d-43f6-8f33-9a160df978f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C (SCL)" input
+			(at 190.5 78.74 90)
+			(uuid "34042802-4819-4c00-8297-cc73392d8dc5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C (SDA)" input
+			(at 193.04 78.74 90)
+			(uuid "33a62f68-8443-49dc-9b0a-3dafa08ac4c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Battery_voltage_sense" input
+			(at 142.24 78.74 90)
+			(uuid "7dc064c2-c4d1-421c-8e83-c9ebb5921962")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "modem_status" input
+			(at 139.7 78.74 90)
+			(uuid "39f27e11-c763-441d-8da9-eb4fbaec77c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Motion_wake" input
+			(at 195.58 78.74 90)
+			(uuid "2f386238-73f8-451b-91f9-5862cf058b5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "power-on_pulse" input
+			(at 144.78 78.74 90)
+			(uuid "f3104be8-6177-46c7-b3b8-5051f463d80f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "modem_rail_switch" input
+			(at 128.27 102.87 180)
+			(uuid "96ecca6b-aef9-43ea-a36e-3657af415877")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601"
 					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 115.57)
+		(size 71.12 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5e2b9ef6-e5de-466d-9d3c-302bc9979b80")
+		(property "Sheetname" "Sound"
+			(at 128.27 114.8584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sound.kicad_sch"
+			(at 128.27 140.2846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 128.27 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "Buzzer+" input
+			(at 152.4 115.57 90)
+			(uuid "99833b2a-03f4-4548-9a28-ee0755bedaec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Buzzer-" input
+			(at 154.94 115.57 90)
+			(uuid "6fd042af-4c4d-4385-9070-f0f7e7af863a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601"
+					(page "9")
 				)
 			)
 		)
@@ -133,6 +590,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "modem_rail_switch" input
+			(at 123.19 102.87 0)
+			(uuid "7d54a07c-1025-4e1a-b444-592a14192f1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -179,6 +646,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C (SCL)" input
+			(at 214.63 58.42 180)
+			(uuid "bbbaa4d7-6f27-4360-b9c9-9a4ebcb52394")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C (SDA)" input
+			(at 214.63 60.96 180)
+			(uuid "30ffa6e9-c657-4f4a-98bf-9c5f4874f1fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Motion_wake" input
+			(at 214.63 63.5 180)
+			(uuid "6749d4ae-7c2c-45bb-80d9-640715d005b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

@@ -7,6 +7,16 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 209.55 106.68) (xy 199.39 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bbbafdd-a0de-47db-9bf0-743248225831")
+	)
+	(wire
+		(pts
 			(xy 134.62 67.31) (xy 134.62 73.66)
 		)
 		(stroke
@@ -117,6 +127,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 116.84) (xy 209.55 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53af8e24-aab7-4eab-8334-71cf501214f5")
+	)
+	(wire
+		(pts
 			(xy 139.7 67.31) (xy 139.7 78.74)
 		)
 		(stroke
@@ -134,6 +154,16 @@
 			(type default)
 		)
 		(uuid "978e94e0-2da3-4d93-922c-519213d00a92")
+	)
+	(wire
+		(pts
+			(xy 209.55 116.84) (xy 209.55 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a32c9546-693e-4b60-919c-da36628462c4")
 	)
 	(wire
 		(pts
@@ -283,7 +313,7 @@
 				(justify left top)
 			)
 		)
-		(pin "UART RXD" input
+		(pin "UART (RXD)" input
 			(at 134.62 67.31 270)
 			(uuid "2b330313-49bd-4491-81de-3441da490233")
 			(effects
@@ -293,7 +323,7 @@
 				(justify left)
 			)
 		)
-		(pin "UART TXD" input
+		(pin "UART (TXD)" input
 			(at 137.16 67.31 270)
 			(uuid "30353447-8de8-4f0f-a546-9466547502b0")
 			(effects
@@ -323,7 +353,7 @@
 				(justify left)
 			)
 		)
-		(pin "power_on_pulse" input
+		(pin "power-on_pulse" input
 			(at 144.78 67.31 270)
 			(uuid "7a438a91-efac-4da9-89c9-74cd82160574")
 			(effects
@@ -379,7 +409,7 @@
 				(justify left top)
 			)
 		)
-		(pin "AT UART (RXD)" input
+		(pin "UART (RXD)" input
 			(at 134.62 78.74 90)
 			(uuid "bbf9e7ff-755b-4a49-a6ee-592bb0cfd034")
 			(effects
@@ -389,7 +419,7 @@
 				(justify right)
 			)
 		)
-		(pin "AT UART (TXD)" input
+		(pin "UART (TXD)" input
 			(at 137.16 78.74 90)
 			(uuid "cff7d977-d39d-43f6-8f33-9a160df978f6")
 			(effects
@@ -419,7 +449,7 @@
 				(justify right)
 			)
 		)
-		(pin "Battery_voltage_sense" input
+		(pin "battery_voltage_sense" input
 			(at 142.24 78.74 90)
 			(uuid "7dc064c2-c4d1-421c-8e83-c9ebb5921962")
 			(effects
@@ -467,6 +497,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "LED DIN" input
+			(at 199.39 106.68 0)
+			(uuid "900ab056-19b3-4dcb-9a8e-173f445483d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -728,6 +768,62 @@
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 215.9 115.57)
+		(size 49.53 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a5c86ac0-c7fd-4e96-b586-e8495a668fc4")
+		(property "Sheetname" "Visual"
+			(at 215.9 114.8584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "visual.kicad_sch"
+			(at 215.9 141.5546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LED_DIN" input
+			(at 215.9 116.84 180)
+			(uuid "efbc0d5e-18a6-417b-8081-92bc1105a68f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601"
+					(page "10")
 				)
 			)
 		)

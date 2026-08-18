@@ -3210,7 +3210,7 @@
 		)
 		(uuid "00493f3d-a19d-4a09-b1b7-be1a5c2bb0d9")
 	)
-	(hierarchical_label "UART RXD"
+	(hierarchical_label "UART (RXD)"
 		(shape input)
 		(at 106.68 46.99 180)
 		(effects
@@ -3221,7 +3221,7 @@
 		)
 		(uuid "68a7000e-d1d3-4b2e-b557-c2b86fc7d76f")
 	)
-	(hierarchical_label "power_on_pulse"
+	(hierarchical_label "power-on_pulse"
 		(shape input)
 		(at 106.68 24.13 180)
 		(effects
@@ -3232,7 +3232,7 @@
 		)
 		(uuid "7f5a682f-e83d-4894-bdb2-9c3ff5392577")
 	)
-	(hierarchical_label "UART TXD"
+	(hierarchical_label "UART (TXD)"
 		(shape input)
 		(at 106.68 44.45 180)
 		(effects

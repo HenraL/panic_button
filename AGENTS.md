@@ -187,6 +187,7 @@ Every source file starts with a header block:
 
 - Linter: VSCode with the **Pylance** extension (enforces PEP 8 + type-checking). Keep code Pylance-clean.
 - Formatter: **autopep8** (`line-length` ~120). Indentation: 4 spaces, no tabs, no trailing whitespace.
+- Markdown files (`.md`) are linted with the **markdownlint VSCode extension** (default rules, no repo config file). Every multiline code fence must carry a language tag (` ```txt ` for ASCII/plain blocks, ` ```python `, etc.). Long lines in wiring tables and ASCII diagrams are intentional (MD013 tolerated there); avoid duplicate headings (MD024), bare URLs (MD034), and trailing whitespace (MD009).
 - Braces (C++): Allman (own line) for namespaces/classes/functions; K&R (same line) for control flow (`if`/`for`/`while`).
 - Include guards: `#pragma once` everywhere.
 - Variable declarations: declare all local variables at the top of the function body — never in the middle of the function or inside loop bodies.

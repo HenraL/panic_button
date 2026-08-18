@@ -44,7 +44,7 @@
 -- PROJECT: AsperHeader
 -- FILE: missing_components.md
 -- CREATION DATE: 16-08-2026
--- LAST Modified: 18:14:43 18-08-2026
+-- LAST Modified: 19:23:44 18-08-2026
 -- DESCRIPTION:
 -- A small panic beacon: reports its position to a server, falls back to SMS when unreachable, and advertises BLE (Find My-style) so phones can interact with it without an app.
 -- /STOP
@@ -170,8 +170,9 @@ change; "OPEN" = decision pending.
 | `U5 (pin 28 U0TXD) -> U1 (pin 10 RXD)` | modem AT UART |
 | `U5 (pin 14 GPIO8) -> U2 (pin 4 SDA/SDI)` | I2C SDA (PROPOSED) |
 | `U5 (pin 15 GPIO9) -> U2 (pin 1 SCL/SPC)` | I2C SCL (PROPOSED) — shares the R_BOOT pull-up node |
-| `U5 (pin 16 GPIO10) -> U2 (pin 12 INT1)` | motion wake (PROPOSED) |
+| `U5 (pin 10 MTDI = GPIO5) -> U2 (pin 12 INT1)` | motion wake (PROPOSED) — **moved from GPIO10, see GPIO table** |
 | `U5 (pin 6 GPIO2) -> U1 (pin 51 VBAT_ADC)` | battery voltage sense (PROPOSED) |
+| `U5 (pin 9 MTMS = GPIO4) -> SW4 (pin 1)` | [ADD] status button; `SW4 (pin 2) -> GND` — short = battery beeps, mid = jingle, long = BLE pairing |
 | `U5 (pin 8 GPIO3) -> U1 (pin 1 PWRKEY)` | power-on pulse (PROPOSED) |
 | `U5 (pin 25 GPIO18) -> U1 (pin 66 STATUS)` | modem status / LED (PROPOSED) |
 | `U5 (pin 26 GPIO19) -> U4 (pin 5 EN)` | modem rail switch (PROPOSED) |
@@ -195,10 +196,10 @@ Switches already on the sheets:
 | ----- | --- | ------ |
 | 1 | 3V3 | from the programmer (strapping a 2-pin bridge powers the bare board) |
 | 2 | GND | |
-| 3 | U0TXD | `J3 (pin 3) -> U5 (pin 28)` — C3 TX → programmer RX |
-| 4 | U0RXD | `J3 (pin 4) -> U5 (pin 27)` — C3 RX ← programmer TX |
-| 5 | CHIP_EN | `J3 (pin 5) -> U5 (pin 7)` — programmer pulses low→high to reset into bootloader |
-| 6 | GPIO9 | `J3 (pin 6) -> U5 (pin 15)` — programmer drives LOW at reset → download mode (R_BOOT pull-up is fine; programmer overrides) |
+| 3 | U0TXD | `J3 (pin 3) -> U5 (pin 28 U0TXD)` — C3 TX → programmer RX |
+| 4 | U0RXD | `J3 (pin 4) -> U5 (pin 27 U0RXD)` — C3 RX ← programmer TX |
+| 5 | CHIP_EN | `J3 (pin 5) -> U5 (pin 7 CHIP_EN)` — programmer pulses low→high to reset into bootloader |
+| 6 | GPIO9 | `J3 (pin 6) -> U5 (pin 15 GPIO9)` — programmer drives LOW at reset → download mode (R_BOOT pull-up is fine; programmer overrides) |
 
 The THT header doubles as a test jig for the dev variant; on tiny it can be
 castellated/solder pads instead if the case forbids the height.
@@ -221,15 +222,16 @@ mistake, no shorts: J2 CC1/CC2 → R1/R2 → GND ✓, VBUS×2 → 5V → U3 VIN 
 
 | Wire | Notes |
 | ---- | ----- |
-| `BT1 (+) -> CELL_POS` | cell positive |
+| `BT1 (+) -> CELL_POS` | cell positive — ⚠ **via the SW3 slide switch** (see on/off below) |
 | `BT1 (−) -> CELL_NEG` | cell negative |
 | `U6 (pin 4 VCC) -> 5V` | charger input from USB-C |
-| `U6 (pin 5 BAT) -> CELL_POS` | charge output to the cell |
+| `U6 (pin 5 BAT) -> CELL_POS` | charge output to the cell — **via SW3** (charging works with SW3 off: the load is disconnected, not the cell) |
 | `U6 (pin 3 GND) -> GND`, `U6 (pin 9 EPAD) -> GND` | |
 | `U6 (pin 2 PROG) -> R_PROG (pin 1)` | [ADD] 1.2–2.4 kΩ; `R_PROG (pin 2) -> GND` (2.4 kΩ = 500 mA = 0.5 C, recommended; 1.2 kΩ = 1 A max) |
 | `U6 (pin 8 CE) -> 3.3V` | charge enable |
 | `U6 (pin 1 TEMP) -> NTC 10 kΩ -> GND` | [ADD, optional — only if the cell has a TS pin] |
-| `U6 (pin 7 CHRG)` / `U6 (pin 6 STDBY)` | [ADD, optional] charge LEDs + 1 kΩ |
+| `U6 (pin 7 CHRG) -> R_LED1 -> D1` | **DECIDED** red LED = charging (open-drain, active low), 1 kΩ in series, D1 cathode side |
+| `U6 (pin 6 STDBY) -> R_LED2 -> D2` | **DECIDED** green LED = charged, same wiring |
 | `U7 (pin 5 VCC) -> CELL_POS` | DW01A supply |
 | `U7 (pin 6 GND) -> CELL_NEG` | |
 | `U7 (pin 2 CS) -> Q1 mid node` | [ADD Q1] see below |
@@ -239,6 +241,37 @@ mistake, no shorts: J2 CC1/CC2 → R1/R2 → GND ✓, VBUS×2 → 5V → U3 VIN 
 | `Q1 (pin 1 S1) + (pin 3 S2) -> U7 (pin 2 CS)` | [ADD] 8205A, SOT-23-6, unpopulated by default |
 | `Q1 (pin 6/5 D1/D2)` | D1 -> CELL_NEG, D2 -> P_NEG |
 | `Jumper (pad 1) -> P_NEG`, `Jumper (pad 2) -> GND` | [ADD] 2-pad solder jumper, **bridged by default** = protection bypassed; open only for a bare cell, then populate U7 + Q1 |
+
+#### LEDs + on/off button (decision 19-08-2026 — zero GPIO cost)
+
+**Battery-status LEDs — free, from the TP4056 open-drain outputs** (the standard charger
+circuit, active low):
+
+- D1 red = **charging** ← `U6 (pin 7 CHRG)` via 1 kΩ
+- D2 green = **charged** ← `U6 (pin 6 STDBY)` via 1 kΩ
+- Both lit only while USB is plugged in — exactly when you're looking at them. 0 mA
+  battery drain, 0 GPIOs.
+
+**"Power" LED — deliberately NOT a rail LED.** An always-on 3.3V-rail LED burns ~2 mA
+24/7 ≈ 48 mAh/day ≈ 5 % of the 1000 mAh budget. Instead:
+
+- **D3 ← U1 (pin 52 NETLIGHT)** via 1 kΩ — the modem's built-in network-status blinker
+  (off = modem off, 64 ms-on/800 ms-off = not registered, 64 ms-on/3 s-off = registered,
+  64 ms-on/300 ms-off = data). Tells you the tracker is alive *and* connected. 0 firmware,
+  0 GPIOs. (If size is a fight, this is the one to cut.)
+
+**On/off button — a slide switch (SW3) in the `CELL_POS` path**, between `U6 (pin 5 BAT)`
+and the rest of the board. Rationale:
+
+- Every GPIO is allocated — no push-button input available without dropping a feature
+  (e.g. the PWRKEY cap already ate the last one).
+- CHIP_EN (SW2) can't be a soft power button: it *resets* the chip, it's not readable.
+- A slide switch = true hard-off (µA-level leakage = none), works for storage/transport,
+  and charging still works with it off (TP4056 BAT connects directly to the cell).
+- Soft off stays as firmware: deep sleep + motion wake (U2 INT1), modem rail cut by
+  GPIO19/EN, PWRKEY auto-on cap restarts the modem on wake.
+- Part: tiny SMD slide switch (e.g. `Switch:SW_SPDT` 2.5 mm pitch, ~$0.20) — or a 2-pad
+  solder jumper if the case can't fit a switch (open = off, storage only).
 
 ### modem_rail
 
@@ -271,6 +304,7 @@ mistake, no shorts: J2 CC1/CC2 → R1/R2 → GND ✓, VBUS×2 → 5V → U3 VIN 
 | `U1 (pin 10 RXD) -> U5 (pin 28 U0TXD)` | AT UART |
 | `U1 (pin 1 PWRKEY) -> U5 (pin 8 GPIO3)` | pulse low ≥ 500 ms to power on/off |
 | `U1 (pin 66 STATUS) -> U5 (pin 25 GPIO18)` | modem status sense |
+| `U1 (pin 52 NETLIGHT) -> R_LED3 -> D3` | **DECIDED** network-status LED, 1 kΩ, D3 cathode side — see LEDs decision above |
 | `U1 (pin 51 VBAT_ADC) -> U5 (pin 6 GPIO2)` | battery sense (alternate: resistor divider from CELL_POS) |
 | `U1 (pin 30 USIM1_VDD) -> J1 (VCC)` | + 100 nF decap |
 | `U1 (pin 31 USIM1_DATA) -> J1 (I/O)` | |
@@ -299,7 +333,7 @@ mistake, no shorts: J2 CC1/CC2 → R1/R2 → GND ✓, VBUS×2 → 5V → U3 VIN 
 | `U2 (pin 1 SCL/SPC) -> U5 (pin 15 GPIO9)` | I2C clock |
 | `U2 (pin 3 SA0/SDO) -> GND` | I2C address 0x19 (or 3.3V = 0x18) |
 | `U2 (pin 2 CS) -> 3.3V` | I2C mode (CS inactive) |
-| `U2 (pin 12 INT1) -> U5 (pin 16 GPIO10)` | wake-on-motion |
+| `U2 (pin 12 INT1) -> U5 (pin 10 MTDI = GPIO5)` | wake-on-motion — RTC GPIO, deep-sleep EXT1 wake |
 | `U2 (pin 11 INT2)` | leave NC |
 | `U2 (pin 5 RES)` | leave NC (internal pull-up) |
 
@@ -312,28 +346,28 @@ mistake, no shorts: J2 CC1/CC2 → R1/R2 → GND ✓, VBUS×2 → 5V → U3 VIN 
 | `C1 (pin 2) -> GND` | |
 | `E1 (GND pads) -> GND` | antenna ground + keep-out |
 
-### sound (new sheet, 19-08-2026)
+### sound (new sheet, 19-08-2026 — DECIDED: passive piezo + LEDC melodies)
 
 | Wire | Notes |
 | ---- | ----- |
-| `BZ1 (pin 1 +) -> Q1 (drain/collector)` | [ADD Q1] NPN/MOSFET driver — **active** buzzer draws ~20–40 mA, too much for a GPIO pin |
-| `Q1 (source/emitter) -> GND` | |
-| `Q1 (gate/base) -> buzzer GPIO -> 100 kΩ -> GND` | [ADD] pull-down so the buzzer can't click at boot |
-| `BZ1 (pin 2 −) -> 3.3V` | (or − to GND with Q1 high-side — pick one, then invert the firmware) |
-| `Buzzer GPIO -> 3.3V` | [ADD] 100 nF across BZ1 pins (active buzzer), or just rely on the driver |
+| `U5 (pin 8 GPIO3) -> BZ1 (pin 1 +)` | direct GPIO drive, **no transistor** — LEDC PWM square wave (2–4 kHz, 50% duty) plays real melodies (pitch + rhythm); bit-banged GPIO toggling works too (same wiring) |
+| `BZ1 (pin 2 −) -> GND` | |
+| (optional) 100 nF across BZ1 | only for the active-buzzer variant; not needed for the piezo |
 
-Buzzer choice — recommendation (see conversation 19-08-2026):
+Buzzer decision (19-08-2026):
 
-- **BZ1 placed = SparkFun 9 mm SMD "active" buzzer** (internal oscillator): fixed shrill
-  ~2.7 kHz tone, on/off only — no chirps/melodies, needs the transistor driver (~20–40 mA).
-  Works if a single monotone beep is acceptable.
-- **Preferred for a cat finder: passive piezo transducer (~9–12 mm, e.g. Murata
-  PKLCS1212E4001-R1)** — the ESP32-C3 drives it directly with LEDC PWM (2 mA), and
-  firmware gets programmable chirps/patterns ("find me" cadence, low-battery tone) instead
-  of one fixed beep. Lighter, no transistor, no coil whine at 3.3 V. Cost ≈ same.
-- **Modem-codec alternative (only if loud + melodic matters):** SIM7670G exposes EAR/MIC
-  pins — a small speaker could ring tones via AT. Overkill here: modem must be awake
-  (100 mA class) and it adds an audio path for a finder beep.
+- **Swap BZ1 for a passive piezo transducer: Murata PKLCS1212E4001-R1 (12×12×2 mm, ~75 dB,
+  2 g) or PKLCS0909E4001-R1 (9×9×1.9 mm — the tiny pick).** The placed SparkFun 9 mm symbol
+  is an *active* buzzer (fixed ~2.7 kHz, 20–30 mA → needs a driver transistor, rhythm-only
+  "melodies"). The passive piezo: ~2 mA, direct GPIO, and the ESP32-C3's LEDC plays
+  pitch-accurate melodies (find-me pattern, low-battery tone, SOS).
+- Symbol: keep the 2-pin SparkFun symbol as a placeholder or use `Device:Buzzer`; footprint
+  = the Murata PKLCS pad layout.
+- Wiring: `U5 (pin 8 GPIO3) -> BZ1 (+)`, `BZ1 (−) -> GND`. GPIO3 is freed by the PWRKEY
+  auto-power-on cap (see GPIO table). No firmware worry about SCL/GPIO9 — the buzzer is on
+  GPIO3 (pin 8), not on the strapping pin.
+- Modem-codec alternative (only if loud + melodic matters): SIM7670G EAR/MIC pins could ring
+  tones via AT — overkill, modem must be awake (100 mA class).
 
 ## Components to add (summary)
 
@@ -355,36 +389,63 @@ Buzzer choice — recommendation (see conversation 19-08-2026):
 | FB divider R3/R4 | 700 kΩ / 100 kΩ 0402 | U4 VOUT -> FB -> GND (4.0 V rail) — ⚠ the 5V symbol on U4 VOUT must become VBAT_MODEM first |
 | L2 | 1 µH 0603 | U4 pin 2 SW <-> CELL_POS |
 | Q1 | 8205A SOT-23-6 (unpopulated) | U7 gates, see li-ion sheet |
-| Q2 (buzzer driver) | NPN 2N7002/S8050 or N-MOSFET | BZ1 (only if keeping the active buzzer) |
-| PWRKEY cap | 100 nF 0402 | U1 pin 1 PWRKEY -> GND — auto-power-on, frees GPIO3 for the buzzer (PROPOSED) |
+| PWRKEY cap | 100 nF 0402 | U1 pin 1 PWRKEY -> GND — auto-power-on (SIM7670G app-note wiring), **frees GPIO3 for the buzzer — DECIDED, [ADD]** |
+| BZ1 | passive piezo, Murata PKLCS1212E4001-R1 (12×12×2 mm) or PKLCS0909E4001-R1 (9×9×1.9 mm) | U5 pin 8 (GPIO3) -> (+) -> (−) -> GND — **replace the SparkFun 9 mm active buzzer** |
+| D1, D2 | red + green LED 0402/0603 | U6 pin 7 (CHRG) / pin 6 (STDBY) — charging / charged, **DECIDED** |
+| D3 | LED 0402/0603 | U1 pin 52 (NETLIGHT) — network-status blinker, **DECIDED** |
+| R_LED1/2/3 | 1 kΩ ×3 0402 | in series with D1/D2/D3 |
+| D4 | WS2812B-2020 (2×2×0.75 mm, 1-wire addressable) | U5 pin 16 (GPIO10) -> DI; 5V pin -> 3.3V; GND -> GND; + 100 nF at LED — info/status colors, **DECIDED** |
+| SW3 | tiny SMD slide switch SPDT (`Switch:SW_SPDT`, 2.5 mm pitch) | in CELL_POS, between U6 pin 5 (BAT) and the load — hard on/off, **DECIDED** |
+| SW4 | tact switch SMD 4.5×4.5 mm (same as SW1/SW2) | U5 pin 9 (MTMS = GPIO4) ↔ GND — status button (short = battery beeps, mid = jingle, long = BLE pairing), **DECIDED** |
 | Jumper | 2-pad solder jumper (bridged) | P_NEG <-> GND |
 | U.FL + antenna | U.FL + LTE flex | U1 pin 60 |
 | GNSS patch | 25×25 mm passive | U1 pin 90 |
-| Optional | 32 kHz xtal — **DONE**, charge LEDs, NTC, 1PPS, ESD USBLC6-2SC6, status LED | per rows above |
+| Optional | NTC, 1PPS, ESD USBLC6-2SC6, extra status LED on GPIO18/STATUS | per rows above |
 
-## GPIO allocation (PROPOSED — all 9 free GPIOs of the C3 QFN-32)
+## GPIO allocation (PROPOSED — all free GPIOs of the C3 QFN-32)
 
-| U5 pin | GPIO | Assigned to |
-| ------ | ---- | ----------- |
-| 27 | 20 | U1 pin 9 (TXD) |
-| 28 | 21 | U1 pin 10 (RXD) |
-| 14 | 8 | U2 pin 4 (SDA) |
-| 15 | 9 | U2 pin 1 (SCL) — strapping pin, keep R_BOOT pull-up |
-| 16 | 10 | U2 pin 12 (INT1, motion wake) |
-| 6 | 2 | U1 pin 51 (VBAT_ADC) — strapping pin, OK as ADC input |
-| 8 | 3 | U1 pin 1 (PWRKEY) — **alternatives for the buzzer:** (a) 100 nF auto-power-on cap on PWRKEY frees GPIO3 → buzzer; (b) run the LED off U1 pin 66 (STATUS) directly and free GPIO18 → buzzer |
-| 25 | 18 | U1 pin 66 (STATUS) — or direct LED drive, see GPIO3 row |
-| 26 | 19 | U4 pin 5 (EN, modem rail) |
+Pin references use the **symbol pin names** (`MTMS`, `MTDI`, `U0TXD`, …); the GPIO number
+follows in parentheses where the name is a function name.
 
-> **Buzzer GPIO — still undecided.** All 9 GPIOs are allocated; the buzzer needs one.
-> Recommended path: **100 nF PWRKEY → GND (auto power-on, a documented SIM7670G wiring)
-> and free GPIO3 for the buzzer** — the modem rail is already gated by GPIO19/EN, and
-> the 100 nF option is a standard SIMCom app-note technique (delayed self-hold on the
-> internal pull-up). Firmware then just toggles the GPIO for the beep.
+| U5 pin (name) | GPIO | Assigned to |
+| ------------- | ---- | ----------- |
+| 28 (U0TXD) | 21 | U1 pin 9 (TXD) |
+| 27 (U0RXD) | 20 | U1 pin 10 (RXD) |
+| 14 (GPIO8) | 8 | U2 pin 4 (SDA) |
+| 15 (GPIO9) | 9 | U2 pin 1 (SCL) — strapping pin, keep R_BOOT pull-up |
+| **9 (MTMS)** | **4** | **SW4 status button (RTC GPIO → EXT1 deep-sleep wake)** |
+| **10 (MTDI)** | **5** | **U2 pin 12 (INT1, motion wake) — MOVED from GPIO10: MTDI is RTC, GPIO10 is not** |
+| 6 (GPIO2) | 2 | U1 pin 51 (VBAT_ADC) — strapping pin, OK as ADC input |
+| 8 (GPIO3) | 3 | **BZ1 (buzzer, LEDC melody)** — freed by the PWRKEY auto-power-on cap |
+| 25 (GPIO18) | 18 | U1 pin 66 (STATUS) — LED can also run directly off STATUS, but GPIO18 stays as-is |
+| 26 (GPIO19) | 19 | U4 pin 5 (EN, modem rail) |
+| 16 (GPIO10) | 10 | **D4 WS2812B-2020 info LED (1-wire color status)** — was spare; not RTC-capable (fine, LED doesn't need wake) |
 
-Pins 9–13 (MTMS/MTDI/MTCK/MTDO), 19–24 (SPI*: internal flash) and 4/5
-(XTAL_32K) are not available on this package. That leaves nothing for UART1
-(GNSS_NMEA) — intentional: NMEA is read via `AT+CGNSSINFO` on UART0.
+> **Buzzer GPIO — DECIDED (19-08-2026): U5 pin 8 (GPIO3), freed by the 100 nF PWRKEY
+> auto-power-on cap.** The cap is a documented SIM7670G wiring (delayed self-hold on the
+> internal pull-up) and the modem rail is already gated by U5 pin 26 (GPIO19)/EN, so PWRKEY
+> loses nothing. Firmware plays melodies on GPIO3 with LEDC PWM (passive piezo, 2–4 kHz
+> square wave) — pitch + rhythm, no transistor.
+
+> **Status button SW4 — DECIDED (19-08-2026): U5 pin 9 MTMS (= GPIO4), button → GND,
+> internal pull-up.** RTC-capable → EXT1 wake from deep sleep. Click taxonomy (firmware,
+> all on existing hardware):
+>
+> - **short click** → battery status: N beeps on the piezo (1 = <25 %, 2 = ~50 %,
+>   3 = ~2/3, 4 = full), measured via U1 pin 51 (VBAT_ADC) → U5 pin 6 (GPIO2).
+> - **mid-long click (~1.5–3 s)** → jingle melody (LEDC on U5 pin 8 GPIO3).
+> - **long click (≥3 s)** → BLE pairing mode (Find My / Find My Device registration window).
+> - **D4 (WS2812B-2020) on U5 pin 16 (GPIO10) shows the colors** — battery level color
+>   (red <25 % / yellow ~50 % / green ~2/3 / cyan full), pairing flash, modem-heartbeat
+>   blink. 1-wire protocol driven by the C3's RMT peripheral; GPIO10 is not a strapping
+>   pin, so a boot-time low on the data line is harmless. D4 5V pin → 3.3V (dimmer, fine),
+>   GND → GND, + 100 nF at the LED.
+
+> **⚠ Motion-wake correction (19-08-2026):** the original INT1 → U5 pin 16 (GPIO10) plan
+> could NOT wake the C3 from deep sleep — only RTC GPIOs (GPIO0–5) do EXT1 wake, and
+> GPIO10 is not one. INT1 now goes to **U5 pin 10 MTDI (= GPIO5, RTC)**, so EXT1 wakes on
+> motion AND button. MTMS/MTDI (GPIO4/5) are the JTAG pins — using them as GPIO disables
+> hardware JTAG debugging; flashing stays UART-based via J3, which was the plan anyway.
 
 ## Battery / energy storage verdict (density-first)
 

@@ -499,9 +499,9 @@
 				(justify left)
 			)
 		)
-		(pin "LED DIN" input
+		(pin "LED_DIN" input
 			(at 199.39 106.68 0)
-			(uuid "900ab056-19b3-4dcb-9a8e-173f445483d9")
+			(uuid "87a95d5e-41e0-4359-a079-d6f841c21745")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -812,7 +812,7 @@
 		)
 		(pin "LED_DIN" input
 			(at 215.9 116.84 180)
-			(uuid "efbc0d5e-18a6-417b-8081-92bc1105a68f")
+			(uuid "7317c395-97da-406f-a085-1d84effcd52b")
 			(effects
 				(font
 					(size 1.27 1.27)

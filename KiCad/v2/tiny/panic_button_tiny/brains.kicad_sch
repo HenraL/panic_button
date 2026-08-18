@@ -2343,6 +2343,46 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "(GPIO7)"
+		(exclude_from_sim no)
+		(at 119.888 65.024 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "029d986c-4e9e-4ca1-8ac5-ee011d321469")
+	)
+	(text "(GPIO5)"
+		(exclude_from_sim no)
+		(at 119.888 59.944 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "225f7970-123a-4003-b87c-0dc3bf535db0")
+	)
+	(text "(GPIO6)"
+		(exclude_from_sim no)
+		(at 119.888 62.484 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "79f38590-ad11-49b7-aaaf-326e083ce5d1")
+	)
+	(text "(GPIO4)"
+		(exclude_from_sim no)
+		(at 119.888 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8c535f63-417b-45b6-a8e4-1fd0611350da")
+	)
 	(junction
 		(at 24.13 82.55)
 		(diameter 0)
@@ -2410,16 +2450,16 @@
 		(uuid "710c29ee-010d-40f3-b252-c2db464ae434")
 	)
 	(junction
+		(at 153.67 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84ff86b1-c53f-40b4-a152-7ae777deb318")
+	)
+	(junction
 		(at 59.69 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "917f2d7f-b03d-4432-bef7-e2ba28bd5caa")
-	)
-	(junction
-		(at 153.67 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a145e58b-9351-4a30-9846-c89a41960685")
 	)
 	(junction
 		(at 128.27 22.86)
@@ -2487,7 +2527,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 48.26) (xy 153.67 52.07)
+			(xy 153.67 46.99) (xy 153.67 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2674,6 +2714,16 @@
 			(type default)
 		)
 		(uuid "637f1534-b263-44c4-bc91-0da009429b8a")
+	)
+	(wire
+		(pts
+			(xy 196.85 57.15) (xy 199.39 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6537e957-7c97-42a5-979e-3352d4159f18")
 	)
 	(wire
 		(pts
@@ -2867,6 +2917,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 46.99) (xy 163.83 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c045adbc-3760-4b8f-b9ab-8724ceae5e9c")
+	)
+	(wire
+		(pts
 			(xy 58.42 74.93) (xy 58.42 68.58)
 		)
 		(stroke
@@ -2904,6 +2964,16 @@
 			(type default)
 		)
 		(uuid "c69e8595-e983-4168-b004-d21f228e28b7")
+	)
+	(wire
+		(pts
+			(xy 132.08 57.15) (xy 186.69 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8a15d67-7d6d-42a4-8078-9dd7b3734656")
 	)
 	(wire
 		(pts
@@ -3050,14 +3120,14 @@
 	)
 	(hierarchical_label "Motion_wake"
 		(shape input)
-		(at 86.36 57.15 180)
+		(at 132.08 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "61a69957-a484-40e1-9c0d-646fbc437ac5")
+		(uuid "5b39af3b-fd1d-4507-9032-68257923b215")
 	)
 	(hierarchical_label "power-on_pulse"
 		(shape input)
@@ -3116,7 +3186,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 163.83 48.26 90)
+		(at 166.37 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3126,8 +3196,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09fef4da-64a1-4fca-9c3f-3f67c3c2e134")
-		(property "Reference" "#PWR057"
-			(at 170.18 48.26 0)
+		(property "Reference" "#PWR058"
+			(at 166.37 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3138,7 +3208,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 48.26 0)
+			(at 166.37 50.8 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3148,7 +3218,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 48.26 0)
+			(at 166.37 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3159,7 +3229,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 48.26 0)
+			(at 166.37 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3170,7 +3240,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 48.26 0)
+			(at 166.37 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3186,7 +3256,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR057")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -3397,7 +3467,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22bf51e5-aede-4ca3-9cfb-f27dfc84ed22")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR055"
 			(at 99.06 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -3457,7 +3527,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR054")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -3817,7 +3887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "790c3c46-7591-4064-834c-47e1e400cf1d")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR057"
 			(at 140.97 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -3877,7 +3947,96 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR056")
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_fab:Switch_Tactile_CnK")
+		(at 191.77 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c7054fc-85cc-41b9-9c1e-421df3b604cd")
+		(property "Reference" "SW3"
+			(at 191.77 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Switch_Tactile_CnK"
+			(at 191.77 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_fab:Button_CnK_PTS636.0_6x3.5mm"
+			(at 191.77 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
+			(at 191.77 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, C&K PTS636 SM25F SMTR LFS, Tactile Switch SPST-NO Top Actuated Surface Mount"
+			(at 191.77 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Status"
+			(at 191.77 53.848 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "edf84f0f-73a0-42d6-ab21-c9bcc75e7577")
+		)
+		(pin "2"
+			(uuid "04d08450-c13a-4322-aaf0-2b3824ad035a")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -3895,7 +4054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8363b4c8-e13e-45f9-819d-46727bcc1ea3")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR052"
 			(at 34.29 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -3955,7 +4114,85 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR058")
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 199.39 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ac34501-b16c-4096-8f96-db14ebd527f6")
+		(property "Reference" "#PWR060"
+			(at 199.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 60.96 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4616703-f97d-4802-a841-49c76e9e0bd1")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -4547,7 +4784,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a577b03e-4adc-42c7-9b55-c8c6aa9f3000")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR056"
 			(at 109.22 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4607,7 +4844,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR055")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -4693,7 +4930,7 @@
 	)
 	(symbol
 		(lib_id "PCM_fab:Switch_Tactile_CnK")
-		(at 158.75 48.26 0)
+		(at 158.75 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4703,7 +4940,7 @@
 		(dnp no)
 		(uuid "ab24855f-63e5-48ab-806b-c8730709b830")
 		(property "Reference" "SW2"
-			(at 158.75 40.64 0)
+			(at 158.75 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4713,7 +4950,7 @@
 			)
 		)
 		(property "Value" "Switch_Tactile_CnK"
-			(at 158.75 43.18 0)
+			(at 158.75 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4723,7 +4960,7 @@
 			)
 		)
 		(property "Footprint" "PCM_fab:Button_CnK_PTS636.0_6x3.5mm"
-			(at 158.75 48.26 0)
+			(at 158.75 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4734,7 +4971,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
-			(at 158.75 48.26 0)
+			(at 158.75 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4745,7 +4982,7 @@
 			)
 		)
 		(property "Description" "Push button switch, C&K PTS636 SM25F SMTR LFS, Tactile Switch SPST-NO Top Actuated Surface Mount"
-			(at 158.75 48.26 0)
+			(at 158.75 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4756,7 +4993,7 @@
 			)
 		)
 		(property "Name" "Reset"
-			(at 158.75 44.958 0)
+			(at 158.75 43.688 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5243,7 +5480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3ea7f00-f078-4a5c-9157-102f8ebbc201")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR054"
 			(at 49.53 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5303,7 +5540,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR053")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -5607,7 +5844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbb60dad-31e7-4146-98a9-3dba4ee2340c")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR053"
 			(at 43.18 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5667,7 +5904,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR052")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)

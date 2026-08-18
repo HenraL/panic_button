@@ -494,7 +494,7 @@
 		)
 		(uuid "5e2b9ef6-e5de-466d-9d3c-302bc9979b80")
 		(property "Sheetname" "Sound"
-			(at 128.27 114.8584 0)
+			(at 127.5584 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -505,7 +505,7 @@
 			)
 		)
 		(property "Sheetfile" "sound.kicad_sch"
-			(at 128.27 140.2846 0)
+			(at 199.9746 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

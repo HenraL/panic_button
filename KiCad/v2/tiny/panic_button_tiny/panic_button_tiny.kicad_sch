@@ -7,6 +7,16 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 181.61 115.57) (xy 181.61 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "095efe97-93e3-41ae-9ecd-71fd7b3b7eff")
+	)
+	(wire
+		(pts
 			(xy 209.55 106.68) (xy 199.39 106.68)
 		)
 		(stroke
@@ -509,6 +519,16 @@
 				(justify right)
 			)
 		)
+		(pin "Buzzer+" input
+			(at 181.61 107.95 270)
+			(uuid "d4af409d-37a3-48c7-baac-29d58e9f5dae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601"
@@ -567,18 +587,8 @@
 			)
 		)
 		(pin "Buzzer+" input
-			(at 152.4 115.57 90)
+			(at 181.61 115.57 90)
 			(uuid "99833b2a-03f4-4548-9a28-ee0755bedaec")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Buzzer-" input
-			(at 154.94 115.57 90)
-			(uuid "6fd042af-4c4d-4385-9070-f0f7e7af863a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -762,6 +772,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BLE_ant_in" input
+			(at 215.9 95.25 180)
+			(uuid "e1448a25-9c9e-4ec8-81da-a9772fe4d72e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

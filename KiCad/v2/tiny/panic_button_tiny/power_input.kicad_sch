@@ -1610,8 +1610,8 @@
 		)
 	)
 	(rectangle
-		(start 129.54 25.4)
-		(end 173.99 62.23)
+		(start 144.78 25.4)
+		(end 189.23 62.23)
 		(stroke
 			(width 0)
 			(type default)
@@ -1623,7 +1623,7 @@
 	)
 	(text "Voltage stepper for the 3.3v line"
 		(exclude_from_sim no)
-		(at 145.034 23.876 0)
+		(at 160.274 23.876 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1636,6 +1636,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21b8ae53-a4b3-44ae-bba6-6668c1d43cfd")
+	)
+	(junction
+		(at 121.92 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26ad389f-6bd2-4bd8-b1fe-0b81e07a0fb1")
 	)
 	(junction
 		(at 34.29 57.15)
@@ -1656,10 +1662,16 @@
 		(uuid "6741bf16-dd26-497b-b8bc-22a2e536b0fc")
 	)
 	(junction
-		(at 130.81 35.56)
+		(at 134.62 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6751be78-d603-40fb-a046-a7f8ffea6d0c")
+		(uuid "7dec5dcc-0d59-45c6-bd7e-ea705f634340")
+	)
+	(junction
+		(at 156.21 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85078ba9-3771-4615-93b5-c2b521f9c391")
 	)
 	(junction
 		(at 31.75 57.15)
@@ -1668,16 +1680,22 @@
 		(uuid "8a4fd043-afce-417b-bcde-b0bd519de9aa")
 	)
 	(junction
-		(at 118.11 35.56)
+		(at 134.62 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a29075a6-9b52-4e4b-ac9b-19630620e4c0")
+		(uuid "8ee49d51-3f9e-4ce9-9030-0fb58220ce00")
 	)
 	(junction
-		(at 140.97 57.15)
+		(at 146.05 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c98750b6-6aab-433e-a870-fa66d773a270")
+		(uuid "a32e4c03-15db-4765-aeae-24a793f78f4d")
+	)
+	(junction
+		(at 121.92 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0c1139e-3215-4310-9e2f-40ed8dca141f")
 	)
 	(junction
 		(at 67.31 30.48)
@@ -1686,20 +1704,14 @@
 		(uuid "cb96351c-be1d-4de0-af6e-f834c1edfda5")
 	)
 	(junction
-		(at 118.11 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ccf09731-4698-43af-953c-4929ca914e3b")
-	)
-	(junction
-		(at 151.13 35.56)
+		(at 166.37 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0112143-a525-4081-8f75-0f7dac6ee9c8")
 	)
 	(wire
 		(pts
-			(xy 118.11 48.26) (xy 118.11 57.15)
+			(xy 121.92 48.26) (xy 121.92 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1709,17 +1721,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 35.56) (xy 118.11 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09b54bc5-3e31-4c87-b221-8819bb87f4f2")
-	)
-	(wire
-		(pts
-			(xy 31.75 57.15) (xy 118.11 57.15)
+			(xy 31.75 57.15) (xy 121.92 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1749,7 +1751,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 35.56) (xy 151.13 35.56)
+			(xy 168.91 35.56) (xy 166.37 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1759,7 +1761,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 35.56) (xy 133.35 35.56)
+			(xy 146.05 35.56) (xy 148.59 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1776,6 +1778,26 @@
 			(type default)
 		)
 		(uuid "30580911-3489-485b-8afc-3e8f0358ad5d")
+	)
+	(wire
+		(pts
+			(xy 134.62 35.56) (xy 146.05 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3672216c-3fc7-4433-b12c-a38ecf03ffad")
+	)
+	(wire
+		(pts
+			(xy 134.62 57.15) (xy 156.21 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37422da5-950b-44ef-9e2a-33ffde32d69a")
 	)
 	(wire
 		(pts
@@ -1799,7 +1821,17 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 38.1) (xy 130.81 38.1)
+			(xy 83.82 35.56) (xy 121.92 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bedc2df-72bd-4b4b-890d-5e82ccfce441")
+	)
+	(wire
+		(pts
+			(xy 148.59 38.1) (xy 146.05 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1809,7 +1841,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 57.15) (xy 140.97 57.15)
+			(xy 166.37 57.15) (xy 156.21 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1819,17 +1851,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 57.15) (xy 118.11 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "729a7452-480e-4e7e-afc4-ce8299a1146c")
-	)
-	(wire
-		(pts
-			(xy 151.13 35.56) (xy 148.59 35.56)
+			(xy 166.37 35.56) (xy 163.83 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1889,7 +1911,17 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 38.1) (xy 130.81 35.56)
+			(xy 121.92 35.56) (xy 134.62 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93173691-6c2d-4f81-ab91-43e393f59db9")
+	)
+	(wire
+		(pts
+			(xy 146.05 38.1) (xy 146.05 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1909,13 +1941,13 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 35.56) (xy 130.81 35.56)
+			(xy 121.92 57.15) (xy 134.62 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ee23db9-f3ee-44ec-9d91-05365d50e941")
+		(uuid "9f09aa50-5b5c-4040-b6f2-878ec70e9f55")
 	)
 	(wire
 		(pts
@@ -1929,7 +1961,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 39.37) (xy 151.13 35.56)
+			(xy 166.37 39.37) (xy 166.37 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1949,7 +1981,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 53.34) (xy 151.13 57.15)
+			(xy 166.37 53.34) (xy 166.37 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1959,7 +1991,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 43.18) (xy 118.11 35.56)
+			(xy 121.92 43.18) (xy 121.92 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1969,7 +2001,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 44.45) (xy 151.13 48.26)
+			(xy 166.37 44.45) (xy 166.37 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1979,7 +2011,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 45.72) (xy 140.97 57.15)
+			(xy 156.21 45.72) (xy 156.21 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2155,7 +2187,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:ME6211C33M5")
-		(at 140.97 38.1 0)
+		(at 156.21 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2166,7 +2198,7 @@
 		(fields_autoplaced yes)
 		(uuid "31d7893a-53f8-499e-9ac7-c5da6d1bd254")
 		(property "Reference" "U3"
-			(at 140.97 27.94 0)
+			(at 156.21 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2176,7 +2208,7 @@
 			)
 		)
 		(property "Value" "ME6211C33M5"
-			(at 140.97 30.48 0)
+			(at 156.21 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2186,7 +2218,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 140.462 51.562 0)
+			(at 155.702 51.562 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2197,7 +2229,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf"
-			(at 141.224 55.118 0)
+			(at 156.464 55.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2208,7 +2240,7 @@
 			)
 		)
 		(property "Description" "500mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 3.3V fixed positive output, SOT-23-5"
-			(at 142.748 53.34 0)
+			(at 157.988 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2527,7 +2559,7 @@
 	)
 	(symbol
 		(lib_id "PCM_4ms_Capacitor:1uF_0603_25V")
-		(at 118.11 45.72 180)
+		(at 121.92 45.72 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2537,7 +2569,7 @@
 		(dnp no)
 		(uuid "75da2ed7-2864-4a3f-aae4-1dabdb0c67f9")
 		(property "Reference" "C3"
-			(at 128.524 47.752 0)
+			(at 120.142 44.704 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2548,7 +2580,7 @@
 			)
 		)
 		(property "Value" "1uF_0603_25V"
-			(at 118.11 49.53 0)
+			(at 121.92 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2559,7 +2591,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 120.65 40.64 0)
+			(at 124.46 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2571,7 +2603,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 45.72 0)
+			(at 121.92 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2582,7 +2614,7 @@
 			)
 		)
 		(property "Description" "1uF, Min. 25V, 0603, Ceramic/MLCC"
-			(at 118.11 45.72 0)
+			(at 121.92 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2593,7 +2625,7 @@
 			)
 		)
 		(property "Specifications" "1uF, Min. 25V, 0603, Ceramic/MLCC"
-			(at 120.65 37.846 0)
+			(at 124.46 37.846 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2605,7 +2637,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 120.65 36.322 0)
+			(at 124.46 36.322 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2617,7 +2649,7 @@
 			)
 		)
 		(property "Part Number" "GRM188R61E105KA12D"
-			(at 120.65 34.798 0)
+			(at 124.46 34.798 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2629,7 +2661,7 @@
 			)
 		)
 		(property "Display" "1uF/25V"
-			(at 128.524 45.212 0)
+			(at 119.888 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2640,7 +2672,7 @@
 			)
 		)
 		(property "JLCPCB ID" "C15849"
-			(at 116.84 33.02 0)
+			(at 120.65 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2745,7 +2777,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SL_Capacitors:100nF_Ceramic")
-		(at 151.13 50.8 90)
+		(at 166.37 50.8 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2756,7 +2788,7 @@
 		(fields_autoplaced yes)
 		(uuid "d1273798-58cf-46e6-add8-cbdb2edc56f6")
 		(property "Reference" "C5"
-			(at 154.94 49.5299 90)
+			(at 170.18 49.5299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2767,7 +2799,7 @@
 			)
 		)
 		(property "Value" "100nF_Ceramic"
-			(at 154.94 52.0699 90)
+			(at 170.18 52.0699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2778,7 +2810,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 154.94 50.8 0)
+			(at 170.18 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2789,7 +2821,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 50.8 0)
+			(at 166.37 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2800,7 +2832,7 @@
 			)
 		)
 		(property "Description" "100nF Ceramic Capacitor"
-			(at 151.13 50.8 0)
+			(at 166.37 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2923,7 +2955,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:10uF_0603_10V_20%")
-		(at 151.13 41.91 0)
+		(at 166.37 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2934,7 +2966,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8a82b79-25fb-4998-9a43-5c5968b513e9")
 		(property "Reference" "C4"
-			(at 153.67 38.1062 0)
+			(at 168.91 38.1062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2945,7 +2977,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 153.67 40.6462 0)
+			(at 168.91 40.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2956,7 +2988,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Capacitor:C_0603_1608Metric"
-			(at 151.13 53.34 0)
+			(at 166.37 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2967,7 +2999,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 151.13 58.42 0)
+			(at 166.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2978,7 +3010,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 151.13 60.96 0)
+			(at 166.37 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2989,7 +3021,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-20155"
-			(at 149.86 55.88 0)
+			(at 165.1 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3000,7 +3032,7 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 153.67 43.1862 0)
+			(at 168.91 43.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3011,7 +3043,7 @@
 			)
 		)
 		(property "Tolerance" "20%"
-			(at 153.67 45.7262 0)
+			(at 168.91 45.7262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3038,7 +3070,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:3.3V")
-		(at 153.67 35.56 0)
+		(at 168.91 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3049,7 +3081,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed69b604-fa95-462e-b968-96ccff253ca6")
 		(property "Reference" "#PWR047"
-			(at 153.67 39.37 0)
+			(at 168.91 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3060,7 +3092,7 @@
 			)
 		)
 		(property "Value" "3.3V"
-			(at 153.67 31.75 0)
+			(at 168.91 31.75 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3070,7 +3102,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 35.56 0)
+			(at 168.91 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3081,7 +3113,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 35.56 0)
+			(at 168.91 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3092,7 +3124,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"3.3V\""
-			(at 153.67 41.91 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3206,8 +3238,8 @@
 		)
 	)
 	(sheet
-		(at 50.8 66.04)
-		(size 71.12 38.1)
+		(at 128.27 35.56)
+		(size 12.7 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3222,7 +3254,7 @@
 		)
 		(uuid "4988fc48-ac14-475f-a329-fd119eb80de7")
 		(property "Sheetname" "Li-ion charging handling"
-			(at 50.8 65.3284 0)
+			(at 127.5584 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3233,7 +3265,7 @@
 			)
 		)
 		(property "Sheetfile" "li-ion_charging_handling.kicad_sch"
-			(at 50.8 104.7246 0)
+			(at 141.5546 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3241,6 +3273,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "PIN+(5V)" input
+			(at 134.62 35.56 90)
+			(uuid "f39284a0-1e6f-42ff-9335-b735d1af9745")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PIN-(5V)" input
+			(at 134.62 57.15 270)
+			(uuid "f4cc4a3a-cbea-4b92-92ac-27a8e333e063")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

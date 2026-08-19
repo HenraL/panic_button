@@ -573,6 +573,10 @@
 			(embedded_fonts no)
 		)
 	)
+	(no_connect
+		(at 52.07 36.83)
+		(uuid "b34217be-a994-4373-bc17-eca304986e8f")
+	)
 	(hierarchical_label "Motion_wake"
 		(shape input)
 		(at 52.07 34.29 0)

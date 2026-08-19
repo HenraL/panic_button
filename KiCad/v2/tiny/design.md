@@ -101,7 +101,7 @@ Concretely the modem must provide: **a GNSS position fix, SMS, and HTTP/HTTPS + 
   triangulation as a fallback → POST to the server via HTTP(S) over LTE.
 - **"If movement"** requires a MEMS accelerometer with a wake-on-motion interrupt to wake the
   MCU from deep sleep — neither the ESP32-C3 nor the modem can sense motion.
-- **BMS is a DW01A-enable toggle (reworked 19-08-2026).** U7 (DW01A) + U8 (8205A) are
+- **BMS is a DW01A-enable toggle (reworked 19-08-2026).** U6 (DW01A) + U7 (8205A) are
   **always populated**; the 8205A FETs are the only cell − → GND path. The toggle is a
   2-pad testpoint switch in the DW01A's GND pin (µA — nothing heats, no power-path switch):
   - Jumper **open** (default — cell with internal protection PCB, typical 603050 pouch):
@@ -115,6 +115,20 @@ Concretely the modem must provide: **a GNSS position fix, SMS, and HTTP/HTTPS + 
   DW01A/8205A combo protects the cell, not a reversed plug — a reversed battery forward
   biases every body diode and kills the charger. Q1 (source = SW4 output, drain = +BATT,
   gate = GND) blocks that with zero drop. **Q2 (Si2301CDS) has no role — drop it.**
+- **Reverse-powering protection (19-08-2026) — what protects what, and the rule:**
+  - **Never series-diode the main rails** (+BATT, 3.3 V) — the 0.3–0.5 V Schottky drop is
+    unacceptable in a battery device; that's exactly why Q1 is a FET (zero-drop ideal diode).
+  - **Cell:** Q1 covers reversed cell insertion; DW01A/8205A block reverse cell current.
+  - **5 V/VBUS (J2):** a series Schottky (SS14/SS24) blocks a reversed or mis-wired USB /
+    bench supply — the TP4056 has no internal reverse-VBUS protection. [ADD, optional but
+    cheap]. The optional USBLC6-2SC6 ESD sits on VBUS/CC for surges.
+  - **J3 programming header:** the R10/R11 series resistors on U0TXD/U0RXD already block
+    backfeed / reversed-plug damage to the C3 pins. Leave the J3 3V3 pin **unwired** (board
+    is self-powered while flashing) or run it through a Schottky — never a straight
+    connection to a live rail.
+  - **Bench-lab safety net:** a TVS (e.g. 5 V on VBUS, 3.3 V on the 3V3 rail) clamps
+    over/under-voltages; a reversed voltage forward-biases it → shorts → a series PPTC fuse
+    opens. Only worth it if the device will be probed by hand a lot.
 - **Battery-status LEDs on the charger** (LED1 red = charging, LED2 green = charged, off the
   TP4056 CHRG/STDBY open-drain outputs via R6/R7 1 kΩ) — wired, zero GPIOs, and the
   "charge status on the LED" spec is satisfied without touching the ESP. A GPIO-driven

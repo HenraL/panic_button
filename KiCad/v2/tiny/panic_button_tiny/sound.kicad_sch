@@ -589,7 +589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20df55fd-8828-4834-a032-ab4ea9af3f00")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR067"
 			(at 34.29 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -649,7 +649,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/5e2b9ef6-e5de-466d-9d3c-302bc9979b80"
-					(reference "#PWR072")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)

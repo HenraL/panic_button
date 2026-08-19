@@ -1041,7 +1041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f358ab1e-a466-4e92-b199-392cb500c12a")
-		(property "Reference" "C14"
+		(property "Reference" "C10"
 			(at 25.4 31.7499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1105,7 +1105,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/a5c86ac0-c7fd-4e96-b586-e8495a668fc4"
-					(reference "C14")
+					(reference "C10")
 					(unit 1)
 				)
 			)

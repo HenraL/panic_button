@@ -44,7 +44,7 @@
 -- PROJECT: AsperHeader
 -- FILE: missing_components.md
 -- CREATION DATE: 16-08-2026
--- LAST Modified: 2:50:0 19-08-2026
+-- LAST Modified: 3:30:0 19-08-2026
 -- DESCRIPTION:
 -- A small panic beacon: reports its position to a server, falls back to SMS when unreachable, and advertises BLE (Find My-style) so phones can interact with it without an app.
 -- /STOP
@@ -76,8 +76,7 @@ change; "OPEN" = decision pending.
 | `5V` | USB-C input rail | J2 VBUS |
 | `3.3V` | logic rail | U3 V_OUT (ME6211) |
 | `BT1 (+)` | battery positive | U6 pin 5 BAT (TP4056), U4 pin 7 VIN, U7 pin 5 VCC (DW01A) — cell +, a *net name* not a connector |
-| `BT1 (−)` | battery negative (raw) | U7 pin 6 GND (DW01A) |
-| `P_NEG` | protected negative | U8 D2 / jumper pad 1 |
+| `BT1 (−)` | battery negative (raw) | U8 pin 2 (cell-side drain), Q1 gate, `-BATT #PWR064`, toggle jumper pad 2 — the cell − rail |
 | `U1 VBAT pins 55–57` (net `U1 VBAT pins 55–57`) | ~4.0 V modem rail | U4 V_OUT (TPS61022) |
 | `GND` | ground | everywhere |
 
@@ -151,7 +150,7 @@ cross-sheet connection still requires the labels to match.
 | network_and_gps | 39 GND stubs + GND symbol + 5 labels (UART TXD/RXD, battery_voltage_sense, power_on_pulse, modem_status) | all signal wiring U1/J1; STATUS level-shift |
 | accelerometer | U2 placed, Vdd/GND touches, 3 labels (I2C (SCL)/(SDA), Motion_wake) | all wiring |
 | modem_rail | — | **everything** (VIN wrong net, VOUT labeled 5V, L2/FB/caps/EN/MODE) |
-| li-ion_charging_handling | U6/U7/BT1 placed | **everything** (0 wires) |
+| li-ion_charging_handling | U6/U7/U8/BT1/SW4/Q1 wired (charger + LED pair + protection pair, 54 wires) | cell-side net (BT1 ↔ SW4/Q1/+BATT redo), U7 VCC → BT1 (+), drains (pin 2 → cell −, pin 5 → GND), toggle jumper + R12/R13 |
 | sound | BZ1 placed, 2 labels | **everything** |
 | radio_layout | E1/L1/C1 placed | **everything** (0 wires) |
 
@@ -449,30 +448,31 @@ explicit wire (same for R2 pin 2 @ (64.77, 39.37) -> GND symbol). CC2 -> R2 is a
 > - **U6 TP4056-42-ESOP8** (`Battery_Management`): 1 TEMP, 2 PROG, 3 GND, 4 VCC, 5 BAT,
 >   6 STDBY, 7 CHRG, 8 CE, 9 EPAD ✓ matches
 
-Parts on the sheet (01:40 save): **BT1** Battery_Cell @ (19.05, 36.83), **SW4** SPDT slide
-switch @ (38.10, 31.75) — the hard on/off, **Q1** Si2305CDS @ (57.15, 31.75) rot 90,
-**Q2** Si2301CDS @ (170.18, 63.50) — reverse-protection FETs, **U6** TP4056 @ (81.28, 43.18),
-**U7** DW01A @ (143.51, 31.75), **U8** 8205A @ (162.56, 44.45) — protection pair,
-**LED1** red @ (50.80, 43.18) + **LED2** green @ (50.80, 48.26), **R6**/**R7** 1 kΩ,
-**R8** 1.2 kΩ, **R9** 10 kΩ, **TP7**–**TP11** test points. Power symbols (01:56 annotation):
-`-BATT #PWR064` @ (19.05, 46.99) — NEW, on the BT1 (−) rail, `GND #PWR065` @ (19.05, 67.31),
-`GND #PWR066` @ (45.72, 48.26), `+BATT #PWR067` @ (66.04, 29.21), `3.3V #PWR068`
-@ (69.85, 38.10), `5V #PWR069` @ (81.28, 27.94), `GND #PWR070` @ (81.28, 59.69).
-(visual: `+BATT #PWR071` @ (19.05, 20.32), `GND #PWR072` @ (19.05, 39.37).)
+Parts on the sheet (03:21 save — **full re-layout**): **BT1** Battery_Cell @ (19.05, 36.83),
+**TP10**/**TP11**/**TP12**/**TP13** (TestPoint_1.25mm) @ (45.72/54.61, 30.48/34.29) — the cell
+probe row, **U7** DW01A @ (72.39, 33.02), **U8** 8205A @ (91.44, 45.72) — protection pair
+(moved left), **SW4** SPDT slide @ (133.35, 33.02), **Q1** Si2305CDS @ (152.40, 33.02) rot 90,
+**Q2 REMOVED (03:21)** — no role, dropped by the user ✓, **U6** TP4056 @ (176.53, 44.45),
+**LED1** red @ (146.05, 44.45) + **LED2** green @ (146.05, 49.53), **R6**/**R7** 1 kΩ
+@ (158.75, 44.45/46.99), **R8** 1.2 kΩ @ (187.96, 52.07), **R9** 10 kΩ @ (198.12, 52.07),
+**TP7** @ (187.96, 44.45), **TP8** @ (196.85, 44.45), **TP9** @ (198.12, 55.88). Power
+symbols (03:21 positions): `+BATT #PWR067` @ (161.29, 30.48), `-BATT #PWR064` @ (128.27, 44.45)
+rot 270, `3.3V #PWR068` @ (165.10, 39.37), `5V #PWR069` @ (176.53, 29.21), `GND #PWR066`
+@ (140.97, 49.53), `GND #PWR070` @ (176.53, 60.96). **54 wires** on the sheet.
 
-Charger & LEDs wired ✓ (01:18–01:40): `BT1 (+) -> SW4 (pin 2)`, `BT1 (−) -> GND #PWR065`
-(+ long bottom route to U7; the new `-BATT #PWR064` symbol labels the same net), `5V -> U6 (pin 4 VCC)`, `U6 (pin 8 CE) -> 3.3V`,
-`U6 (pin 5 BAT) -> +BATT #PWR067` (rail source; TP10 taps it @ (109.22, 29.21)),
-`U6 (pin 7 CHRG) -> R6 -> LED1 red -> GND #PWR065`, `U6 (pin 6 STDBY) -> R7 -> LED2 green ->
-GND`, `U6 (pin 2 PROG) -> R8 -> GND #PWR069`, `U6 (pin 3 GND + pin 9 EPAD) -> GND`,
-`U6 (pin 1 TEMP) -> TP7`. On/off chain (01:40 → 01:56): `SW4 (pin 1 A) -> Q1 (pin 2 S)`,
-`Q1 (pin 3 D) -> +BATT #PWR067`, and at 01:56 **`Q1 (pin 1 G) -> BT1 (−)` — the
-SW4 → Q1 → +BATT chain is fully closed ✓**.
+Charger & LEDs wired ✓ (01:18–01:40, re-verified 03:21): `5V -> U6 (pin 4 VCC)`, `U6 (pin 8 CE) -> 3.3V`,
+`U6 (pin 5 BAT) -> +BATT #PWR067` (rail source @ (161.29, 30.48)),
+`U6 (pin 7 CHRG) -> R6 -> LED1 red -> GND #PWR066`, `U6 (pin 6 STDBY) -> R7 -> LED2 green ->
+GND`, `U6 (pin 2 PROG) -> R8 -> GND #PWR070`, `U6 (pin 3 GND + pin 9 EPAD) -> GND`,
+`U6 (pin 1 TEMP) -> TP7`. ⚠ the cell-side net is OPEN after the 03:21 re-layout: `BT1 (+) ->
+TP10` only and `BT1 (−) -> TP12` only (SW4/Q1 unwired; the 01:56 on/off chain must be redone
+at the new positions: `BT1 (+) -> SW4 pin 2`, `SW4 pin 1 (A) -> Q1 (pin 2 S)`,
+`Q1 (pin 3 D) -> +BATT`, `Q1 (pin 1 G) -> BT1 (−)`).
 
 | Wire | Notes |
 | ---- | ----- |
-| `BT1 (+) -> SW4 (pin 2)` | ✓ done |
-| `SW4 (pin 1 A) -> Q1 (pin 2 S)`, `Q1 (pin 3 D) -> +BATT`, **`Q1 (pin 1 G) -> BT1 (−)/GND`** | ✓ **ALL DONE (01:56 save)** — gate wire @ (55.88, 35.56) → (39.37, 35.56) → (39.37, 40.64) → (19.05, 40.64) → BT1 (−) @ (19.05, 39.37). **The SW4 → Q1 → +BATT chain is now fully closed — the rail is live** |
+| `BT1 (+) -> SW4 (pin 2)` | ⚠ **undone by the 03:21 re-layout** — BT1 + goes to TP10 only now; redo at the new SW4 position |
+| `SW4 (pin 1 A) -> Q1 (pin 2 S)`, `Q1 (pin 3 D) -> +BATT`, **`Q1 (pin 1 G) -> BT1 (−)`** | ⚠ **undone by the 03:21 re-layout** — was fully wired at 01:56, now all free (BT1 + → TP10, BT1 − → TP12); redo at the new positions (SW4 @ (133.35, 33.02), Q1 @ (152.40, 33.02), +BATT @ (161.29, 30.48)) |
 | `U6 (pin 4 VCC) -> 5V` | ✓ done — 5V is global (USB-C from power_input, direct net: li-ion is a **subsheet of power_input** by design, so the battery/5V nets connect straight across) |
 | `U6 (pin 5 BAT) -> +BATT` | ✓ done — via +BATT #PWR067 @ (66.04, 29.21) + TP10 probe |
 | `U6 (pin 8 CE) -> 3.3V` | ✓ done — #PWR067 @ (69.85, 38.10) |
@@ -481,16 +481,17 @@ SW4 → Q1 → +BATT chain is fully closed ✓**.
 | `U6 (pin 7 CHRG) -> R6 (1 kΩ) -> LED1 (red) -> GND` | ✓ done — charging indicator (open-drain, active low) |
 | `U6 (pin 6 STDBY) -> R7 (1 kΩ) -> LED2 (green) -> GND` | ✓ done — charged indicator |
 | `U6 (pin 1 TEMP) -> TP7` | ✓ done — floating test point; NTC only if the cell has a TS pin |
-| `U7 (pin 5 VCC) -> TP11` | ⚠ **wired to a test point ONLY — the DW01A is NOT powered.** VCC must also go to `BT1 (+)` (it can share the +BATT net through the same TP row) |
-| `U7 (pin 6 GND) -> BT1 (−)` | ✓ done — bottom route @ y = 66.04 |
-| `U7 (pin 2 CS) -> U8 (pin 1 S1 + pin 3 S2)` | ✓ done — the mid node (both 8205A sources) |
-| `U7 (pin 1 OD) -> U8 (pin 6)` | ✓ **done (02:30 save) — MOVED from pin 2 to pin 6**, the real discharge gate **G1** per the UMW datasheet (the old wire landed on a drain) |
-| `U7 (pin 3 OC) -> U8 (pin 4)` | ✓ **correct** — pin 4 is the real charge gate **G2** (datasheet), despite the old symbol's "D" label; wire unchanged |
+| `U7 (pin 5 VCC) -> TP11` | ⚠ **wired to a test point ONLY — the DW01A is NOT powered.** VCC must go to `BT1 (+)` — the **cell + node, PRE-SW4**: protection must stay armed while charging with SW4 off (the `+BATT` rail is post-switch and goes to 0 V when the device is off) |
+| `U7 (pin 6 GND) -> U8 (pin 2)` | ✓ done (03:21) — but ⚠ **must be SPLIT per the new BMS-enable scheme**: U7 GND → toggle jumper pad 1, jumper pad 2 → cell −; U8 pin 2 stays on the cell − net (it is the cell-side drain) |
+| `U7 (pin 2 CS) -> U8 (pin 1 S1 + pin 3 S2)` | ✓ done (03:21 rewire) — the mid node (both 8205A sources) |
+| `U7 (pin 1 OD) -> U8 (pin 6)` | ✓ **done (03:21 rewire, same as 02:30)** — real discharge gate **G1** per the UMW datasheet (the old symbol called pin 6 "D") |
+| `U7 (pin 3 OC) -> U8 (pin 4)` | ✓ **done (03:21 rewire)** — real charge gate **G2** (datasheet) |
 | `U7 (pin 4 TD)` | leave open ✓ (nothing wired) |
-| `U8 (pins 2 + 5) -> P_NEG -> jumper -> GND` | ⚠ missing — the real drains (pins 2 + 5, interchangeable D1/D2) go nowhere yet; one side = cell −, the other = P_NEG → solder jumper (`P_NEG <-> GND`, bridged by default, **not placed on the sheet**). ✓ drains are now SEPARATE pins (user split pin 5, 02:47) — the bare-cell mode is wireable |
-| `U8 (pin 6)` | ✓ wired — the OD target (real G1); note the old symbol called it "D" |
-| `Q2 (Si2301CDS) @ (170.18, 63.50)` | ⚠ completely unwired — **no role; recommend REMOVE** (Q1 covers reverse protection, U7/U8 cover the cell) |
-| `R9 (10 kΩ) + TP8/TP9` | ⚠ floating stub — pin 1 -> TP8 @ (101.60, 43.18), pin 2 touching TP9 @ (102.87, 54.61); no net to anything. Battery-sense divider start, or delete? |
+| `U8 (pin 2)` | ⚠ cell-side drain — wired to U7 GND only; must join the `BT1 (−)` cell rail (via `-BATT #PWR064` @ (128.27, 44.45) or direct) |
+| `U8 (pin 5)` | ⚠ system-side drain — wired to `TP13` only; must get a `GND` power symbol (permanent FET path to board GND) |
+| `R12/R13 (470 kΩ)` | [ADD] OD node (U7 pin 1 / U8 pin 6) → `+BATT`, OC node (U7 pin 3 / U8 pin 4) → `+BATT` — keep both 8205A gates high when the DW01A is unpowered (jumper open) |
+| `Q2 (Si2301CDS)` | **REMOVED ✓ (03:21)** — no role (Q1 covers reverse protection) |
+| `R9 (10 kΩ) + TP8/TP9` | ⚠ floating stub — pin 1 -> TP8 @ (196.85, 44.45), R9 @ (198.12, 52.07), pin 2 touching TP9 @ (198.12, 55.88); no net to anything. Battery-sense divider start, or delete? |
 | `SW4 (pin 3 C) + MT1–MT4` | spare throw + mounting tabs — leave unwired ✓ |
 
 > **ℹ Reading the cell nodes (18-08-2026):** `BT1` (the `Device:Battery_Cell` symbol on
@@ -504,28 +505,34 @@ SW4 → Q1 → +BATT chain is fully closed ✓**.
 > charger live in the power path by design, so 5V and +BATT connect **directly** between the
 > two sheets (global power nets, no labels) for stability.
 >
-> **BMS toggle (user spec, 19-08-2026) — the protection section is OPTIONAL by population:**
+> **BMS toggle (user spec, reworked 03:30 19-08-2026) — DW01A-ENABLE scheme: no power-path
+> switch, no population toggle:**
 >
-> - **Default — cell WITH internal BMS** (most 603050 pouches ship with a protection PCB
->   inside the wrapper): jumper **bridged** (= cell − goes straight to GND), **U7/U8 NOT
->   populated**. Cost 0, and the DW01A/8205A don't interfere.
-> - **Bare cell (no BMS)**: open the jumper, populate **U7 (DW01A) + U8 (8205A)** — cell − →
->   U8 drain → the FETs → other U8 drain → P_NEG → board GND; DW01A **OD → U8 pin 6 (G1)** /
->   **OC → U8 pin 4 (G2)** (overcharge / overdischarge / overcurrent protection). ⚠ when
->   U7/U8 are populated, the direct `BT1 (−) -> GND #PWR065` wire must be cut — the cell
->   must reach GND only through the 8205A (the `-BATT #PWR064` label marks the cell-side
->   rail). ✓ the drains (pins 2 + 5) are separate in the symbol since 02:47.
-> - The board always carries the footprints (U7, U8, jumper) — population is the toggle.
+> - **U7 (DW01A) + U8 (8205A) are ALWAYS populated.** The 8205A FETs are the only path from
+>   the cell − to board GND — permanent wires: pin 2 → the cell − rail, pin 5 → a `GND`
+>   symbol. (The old `P_NEG` net and the bridged-bypass jumper are dropped.)
+> - The toggle is a **2-pad testpoint switch in the DW01A's GND pin** (µA — nothing heats):
+>   - **jumper OPEN (default — cell WITH internal BMS, typical 603050 pouch):** the DW01A
+>     has no return path → dead → OD/OC float HIGH via the new **R12/R13 (470 kΩ)
+>     pull-ups to +BATT** → both 8205A gates stay on → the FETs conduct like a wire.
+>     No onboard protection — the battery's own BMS owns the cell.
+>   - **jumper CLOSED (bare cell, no BMS):** the DW01A is powered (VCC → BT1 (+)) and
+>     monitors the cell; OD/OC pull the gates for overcharge / overdischarge /
+>     overcurrent. The 470 kΩ pull-ups are too weak to fight the open-drain trip.
+> - The user's silkscreen text is now CORRECT as written: **"link only if the battery
+>   does not have a BMS; otherwise leave open"** (open = default = with-BMS battery).
+> - Safety: U7 VCC → BT1 (+) is PRE-SW4 so protection stays armed while charging with
+>   the device off; jumper open = DW01A unpowered (GND floating → no current path).
 >
-> **Reverse-polarity protection — Q1 (Si2305CDS @ (57.15, 31.75)): FULLY WIRED ✓ (01:56
-> save — S from SW4 A, D to +BATT, G to BT1 (−)):**
-> the U7/U8 combo protects overcharge / overdischarge / overcurrent, **but NOT a reversed
-> cell** — plugged backwards, the TP4056, DW01A and everything else get forward-biased body
-> diodes and die. **Q1 = Si2305CDS** (≈55 mΩ, best of the two placed): source = SW4 output,
-> drain = +BATT, gate = BT1 (−)/GND; correct polarity: Vgs < 0 → on, **zero drop**; reversed:
-> gate = +3.7 V vs source → off, body diode blocks. **Remaining: REMOVE Q2 (Si2301CDS @
-> (170.18, 63.50)) — a second P-FET on the battery rail has no role** (the DW01A/8205A
-> already cover the cell side, and two series P-FETs only add RDSon drop).
+> **Reverse-polarity protection — Q1 (Si2305CDS @ (152.40, 33.02) rot 90):** the U7/U8
+> combo protects overcharge / overdischarge / overcurrent, **but NOT a reversed cell** —
+> plugged backwards, the TP4056, DW01A and everything else get forward-biased body diodes
+> and die. **Q1 = Si2305CDS** (≈55 mΩ): source = SW4 output, drain = +BATT, gate = BT1 (−);
+> correct polarity: Vgs < 0 → on, **zero drop**; reversed: gate = +3.7 V vs source → off,
+> body diode blocks. ⚠ **the whole on-chain is UNWIRED again after the 03:21 re-layout**
+> (BT1+, SW4, Q1 all free — see the wiring table; was wired at 01:56 before the move).
+> **Q2 (Si2301CDS) REMOVED ✓ (03:21)** — a second P-FET on the battery rail had no role
+> (Q1 covers reverse protection, U7/U8 cover the cell).
 
 #### LEDs + on/off button (decision 19-08-2026 — zero GPIO cost)
 
@@ -545,10 +552,11 @@ circuit, active low) — **WIRED ✓ (01:18 save)**:
   64 ms-on/300 ms-off = data). Tells you the tracker is alive *and* connected. 0 firmware,
   0 GPIOs. (If size is a fight, this is the one to cut.)
 
-**On/off button — a slide switch, PLACED as SW4 @ (38.10, 31.75), in the `BT1 (+)` path**,
-between `U6 (pin 5 BAT)` and the rest of the board. `BT1 (+) -> SW4 pin 2`, `SW4 pin 1
-(A) -> Q1 (pin 2 S) -> Q1 (pin 3 D) -> +BATT` and **`Q1 (pin 1 G) -> BT1 (−)` all wired ✓
-(01:40 → 01:56) — the chain is fully closed**. Rationale:
+**On/off button — a slide switch, PLACED as SW4 @ (133.35, 33.02), in the `BT1 (+)` path**,
+between `U6 (pin 5 BAT)` and the rest of the board. Target wiring: `BT1 (+) -> SW4 pin 2`,
+`SW4 pin 1 (A) -> Q1 (pin 2 S) -> Q1 (pin 3 D) -> +BATT` and `Q1 (pin 1 G) -> BT1 (−)`.
+⚠ **the chain was fully wired at 01:56 but is UNWIRED again after the 03:21 re-layout**
+(BT1+/SW4/Q1 all free). Rationale:
 
 - Every GPIO is allocated — no push-button input available without dropping a feature
   (e.g. the PWRKEY cap already ate the last one).
@@ -710,9 +718,10 @@ Buzzer decision (19-08-2026):
 | R8 (PROG) | 1.2 kΩ 0603 (2.4 kΩ = 500 mA if preferred) | U6 pin 2 -> GND — **PLACED ✓, WIRED ✓ (01:18 save) — 1.2 kΩ = 1 A charge rate** |
 | FB divider R_FB_HI/R_FB_LO | 700 kΩ / 100 kΩ 0402 | U4 VOUT -> FB -> GND (4.0 V rail) — ⚠ the 5V symbol on U4 VOUT must become U1 VBAT (4.0 V) first |
 | L2 | 1 µH 0603 | U4 pin 2 SW <-> BT1 (+) pin |
-| U8 | 8205A SOT-23-6 (BMS toggle — unpopulated by default) | U7 gates, see li-ion sheet — **PLACED @ (162.56, 44.45); symbol RESTORED 02:28 (fresh SnapEDA) + pin 5 SPLIT from pin 2 by the user 02:47 (two separate drains); real part: 1=S1, 2=D, 3=S2, 4=G2, 5=D, 6=G1** |
+| U8 | 8205A SOT-23-6 (**always populated** — the only cell − → GND path) | U7 gates, see li-ion sheet — **PLACED @ (91.44, 45.72) (03:21 re-layout); symbol RESTORED 02:28 (fresh SnapEDA) + pin 5 SPLIT from pin 2 by the user 02:47 (two separate drains); real part: 1=S1, 2=D, 3=S2, 4=G2, 5=D, 6=G1; OD→6 / OC→4 / CS→1+3 WIRED ✓ (03:21 rewire); drains: pin 2 → cell − (⚠ open, now tied to U7 GND), pin 5 → GND (⚠ open, now tied to TP13)** |
 | Q1 | Si2305CDS P-MOSFET SOT-23 | reverse-polarity protection, **FULLY WIRED ✓ (S = SW4 A, D = +BATT, G = BT1 (−), 01:56 save)** |
-| Q2 | Si2301CDS P-MOSFET SOT-23 | **PLACED @ (170.18, 63.50), unwired — no role; recommend REMOVE (Q1 covers reverse protection)** |
+| Q2 | Si2301CDS P-MOSFET SOT-23 | **REMOVED ✓ (03:21)** — no role (Q1 covers reverse protection) |
+| R12/R13 (gate hold-ups) | 470 kΩ ×2 0402 | U7 pin 1 OD → +BATT, U7 pin 3 OC → +BATT — keep the 8205A gates high while the DW01A is unpowered (jumper open); open-drain trip still wins (470 kΩ vs the DW01A's pull-down), **DECIDED [ADD]** |
 | PWRKEY cap | 100 nF 0402 | U1 pin 1 PWRKEY -> GND — auto-power-on (SIM7670G app-note wiring), **frees GPIO3 for the buzzer — DECIDED, [ADD]** |
 | BZ1 | passive piezo, Murata PKLCS1212E4001-R1 (12×12×2 mm) or PKLCS0909E4001-R1 (9×9×1.9 mm) | U5 pin 8 (GPIO3) -> (+) -> (−) -> GND — **replace the SparkFun 9 mm active buzzer** |
 | D1, D2 | red + green LED 0402/0603 | U6 pin 7 (CHRG) / pin 6 (STDBY) — charging / charged, **DECIDED** |
@@ -721,7 +730,7 @@ Buzzer decision (19-08-2026):
 | D1 | WS2812B-2020 status LED (2×2×0.75 mm, 1-wire addressable) — was "D4" in this doc | U5 pin 16 (GPIO10) -> DI; VDD -> 3.3V (pin-coincident ✓, ⚠ power question — see visual section); VSS -> GND; DOUT -> no-connect; + 100 nF at LED — info/status colors, **DECIDED, PLACED ✓ (visual sheet)** |
 | SW4 (on/off slide switch) | tiny SMD slide switch SPDT (`SPDT_Slide_SMD_6.7x2.6mm` — pins 1 A / 2 2 / 3 C) | in BT1 (+), between U6 pin 5 (BAT) and the load — hard on/off, **PLACED ✓ @ (38.10, 31.75); `BT1 (+) -> SW4 pin 2` and `SW4 pin 1 (A) -> Q1 S` wired ✓ (01:40)** |
 | SW3 (status button) | tact switch SMD 4.5×4.5 mm (same as SW1/SW2) | U5 pin 9 (MTMS = GPIO4) ↔ GND — status button (short = battery color on D1, long = BLE pairing), **DONE ✓ (19:37 save)** |
-| Jumper | 2-pad solder jumper (bridged) | P_NEG <-> GND |
+| Jumper | 2-pad testpoint switch, `TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm` (2.54 mm THT, 0.8 mm drill) | **U7 (pin 6 GND) <-> cell −** — the DW01A-enable toggle (µA), **DECIDED [ADD — NOT PLACED yet]**; default OPEN (with-BMS battery) |
 | U.FL + antenna | U.FL + LTE flex | U1 pin 60 |
 | GNSS patch | 25×25 mm passive | U1 pin 90 |
 | Optional | NTC, 1PPS, ESD USBLC6-2SC6, extra status LED on GPIO18/STATUS | per rows above |
@@ -793,18 +802,29 @@ follows in parentheses where the name is a function name.
 > motion AND button. MTMS/MTDI (GPIO4/5) are the JTAG pins — using them as GPIO disables
 > hardware JTAG debugging; flashing stays UART-based via J3, which was the plan anyway.
 
-## Progress assessment (19-08-2026, 01:18 save)
+## Progress assessment (19-08-2026, 03:21 save)
 
-**Overall: ~75 % of the schematic is electrically final.** brains is at **97 wires**; the
-li-ion sheet jumped from 4 to **28 wires** (01:18 save) — charger fully wired (VCC, CE,
-BAT→+BATT, PROG→R8, GND+EPAD), CHRG/STDBY LED pair wired (LED1/LED2 + R6/R7), TEMP→TP7.
-Remaining on li-ion: U7 VCC → BT1 (+), the U8 drains (pin 2 → cell −, pin 5 → P_NEG),
-the jumper itself, Q2 removal, and the R9/TP8/TP9 stub. What's left overall is the short
-list below — the biggest piece of real wiring work
-is still modem_rail.
+**Overall: ~80 % of the schematic is electrically final.** brains at **97 wires**; the
+li-ion sheet re-laid out at 03:21 (**54 wires**) — charger fully wired (VCC, CE, BAT→+BATT,
+PROG→R8, GND+EPAD), CHRG/STDBY LED pair wired, TEMP→TP7, and the **protection pair
+re-wired in its new spot**: OD→pin 6 (G1), OC→pin 4 (G2), CS→pins 1+3, U7 GND→U8 pin 2.
+**Q2 REMOVED ✓.** Remaining on li-ion: the cell-side net (BT1+/− only reach TP10/TP12),
+the SW4→Q1→+BATT on-chain redo, U7 VCC → BT1 (+), the drains (pin 2 → cell −, pin 5 →
+GND), the DW01A-enable jumper + R12/R13 pull-ups. What's left overall is the short list
+below — the biggest piece of real wiring work is still modem_rail.
 
 **Done & verified (23:02 → 01:18 saves):**
 
+- **Li-ion RE-LAYOUT + rewire (03:21 save, 54 wires)** — everything moved: U7 → (72.39,
+  33.02), U8 → (91.44, 45.72), SW4 → (133.35, 33.02), Q1 → (152.40, 33.02) rot 90, U6 →
+  (176.53, 44.45), LED1/LED2 → (146.05, 44.45/49.53), -BATT → (128.27, 44.45) rot 270,
+  +BATT → (161.29, 30.48), new TP12/TP13 next to TP10/TP11. **Q2 REMOVED ✓.** Protection
+  pair re-wired at the new spot: **OD→pin 6 ✓, OC→pin 4 ✓, CS→pins 1+3 ✓, U7 GND→U8 pin 2 ✓**
+  (cell-side drain node), **U8 pin 5→TP13** (system-side drain — needs GND), **U7 VCC→TP11**
+  (still unpowered). Cell net open: BT1 + → TP10 only, BT1 − → TP12 only (SW4/Q1 unwired —
+  the 01:56 chain must be redone). **BMS toggle reworked 03:30 (doc): DW01A-enable scheme** —
+  always-populated U7/U8, jumper moves into the U7 GND pin (µA), R12/R13 470 kΩ pull-ups on
+  OD/OC → +BATT, pin 5 → GND permanent; no power-path switch, nothing heats.
 - **LED data line CLOSED ✓** — brains `LED_DIN` @ (78.74, 57.15) wired to GPIO10, visual
   `LED_DIN` @ (34.29, 27.94) wired to D1 DIN — one net, two sheets
 - **+BATT rail SOURCED ✓** — `+BATT #PWR067 @ (66.04, 29.21)` on li-ion, wired to U6 pin 5
@@ -861,12 +881,15 @@ is still modem_rail.
    ESP-input variant (A: drop Y2 → GPIO0/1 = CHRG/STDBY) would duplicate it; drop the
    GPIO plan unless "charge complete" must wake the ESP
 
-**Li-ion next steps (open wiring):** **U7 VCC → TP11 only (DW01A unpowered — extend to
-BT1 (+))**; **U8 drains: pin 2 → cell − (BT1 (−)), pin 5 → P_NEG → jumper → GND** (jumper
-not placed yet; ✓ drains now separate pins since 02:47); **Q2 (Si2301CDS) — no role,
-recommend REMOVE**; R9/TP8/TP9 stub (battery-sense divider or delete?); R8 1.2 kΩ = 1 A
-charge rate (2.4 kΩ = 500 mA if preferred). Q1 gate → BT1 (−) **DONE ✓ (01:56)**; OD → pin 6 **DONE ✓
-(02:30)**.
+**Li-ion next steps (open wiring, 03:21 state):** cell net first — `BT1 (+) -> SW4 pin 2`,
+`SW4 pin 1 (A) -> Q1 (pin 2 S)`, `Q1 (pin 3 D) -> +BATT #PWR067`, `Q1 (pin 1 G) -> BT1 (−)`
+(all undone by the re-layout); then the BMS-enable scheme: **U7 VCC → BT1 (+)** (pre-SW4,
+keeps protection armed while charging with the device off), **split U7 GND off U8 pin 2**
+→ toggle jumper pad 1 + jumper pad 2 → cell −, **U8 pin 5 → GND** symbol (was TP13),
+**U8 pin 2 → cell − rail** (via `-BATT #PWR064` @ (128.27, 44.45)), **R12/R13 470 kΩ** on
+OD/OC → +BATT. Open questions kept: R9/TP8/TP9 stub (battery-sense divider or delete?),
+R8 1.2 kΩ = 1 A charge rate (2.4 kΩ = 500 mA if preferred). Done since: OD → pin 6 ✓
+(02:30, rewired 03:21), Q1 gate ✓ (01:56, undone 03:21 — redo).
 
 **Biggest remaining blocks:** modem_rail (L2 + FB divider + caps), U1 & J1 wiring on
 network_and_gps (39 GND stubs done), accelerometer wiring, sound LS1 (needs brains labels
@@ -895,7 +918,7 @@ everything else is connectivity hygiene.
 | Part | Source | Reference |
 | ---- | ------ | --------- |
 | U.FL / IPEX | KiCad | `Device:Antenna` symbol; footprint `Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical` |
-| Solder jumper | KiCad | `Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm` (ships bridged) |
+| Solder jumper | KiCad | `TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm` (2-pad testpoint as the BMS toggle — NOT the bridged `SolderJumper-2` part; the toggle ships OPEN = with-BMS default) |
 | Battery symbol | KiCad | `Device:Battery_Cell` (BT1, placed) |
 | Tact switches | KiCad | `Switch:SW_Push` symbol; `Button_Switch_SMD:SW_SPST_TL3342` (4.5×4.5 mm) or similar SMD tact |
 | Programming header | KiCad | `Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical` (J3) |

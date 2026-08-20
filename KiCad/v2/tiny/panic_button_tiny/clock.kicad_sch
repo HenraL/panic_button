@@ -1009,32 +1009,32 @@
 		(uuid "29fe9c44-8f15-406b-9fe1-9ad20b529cb4")
 	)
 	(junction
-		(at 30.48 39.37)
+		(at 49.53 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5b9577d7-ba01-4ab1-859f-83fec8b835c1")
+		(uuid "34a1af13-091d-4607-8bab-52488915fcbc")
 	)
 	(junction
-		(at 38.1 74.93)
+		(at 30.48 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e8e4c63-2d67-40df-a0a4-d43ed8291704")
+	)
+	(junction
+		(at 39.37 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "837baecf-170b-4630-8f5b-ebfa7559367f")
 	)
 	(junction
-		(at 30.48 53.34)
+		(at 31.75 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c1239602-8290-4786-b6fb-26c945618c71")
-	)
-	(junction
-		(at 48.26 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e6b561cb-59cc-4e42-b58a-ec581ce90e47")
+		(uuid "f2c0f9ba-31cc-441b-8080-e2c990211964")
 	)
 	(wire
 		(pts
-			(xy 30.48 53.34) (xy 30.48 74.93)
+			(xy 31.75 58.42) (xy 31.75 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1054,7 +1054,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 74.93) (xy 38.1 74.93)
+			(xy 38.1 80.01) (xy 39.37 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1074,7 +1074,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 74.93) (xy 39.37 74.93)
+			(xy 39.37 80.01) (xy 40.64 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1104,7 +1104,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 29.21) (xy 30.48 39.37)
+			(xy 30.48 29.21) (xy 30.48 34.29)
 		)
 		(stroke
 			(width 0)
@@ -1114,7 +1114,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 62.23) (xy 38.1 62.23)
+			(xy 46.99 67.31) (xy 39.37 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1124,27 +1124,27 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 41.91) (xy 30.48 41.91)
+			(xy 49.53 68.58) (xy 49.53 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3f0ae7c0-695a-4f2c-9636-3c517d9c38e2")
+		(uuid "3a9a81eb-e985-482e-ae10-c65cb44d827b")
 	)
 	(wire
 		(pts
-			(xy 30.48 45.72) (xy 50.8 45.72)
+			(xy 27.94 34.29) (xy 30.48 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "535054a2-1105-40ae-a656-259519c6d39e")
+		(uuid "63e62bba-2b56-4a32-a55f-f203cb26272f")
 	)
 	(wire
 		(pts
-			(xy 44.45 74.93) (xy 48.26 74.93)
+			(xy 45.72 80.01) (xy 49.53 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1154,7 +1154,27 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 62.23) (xy 38.1 74.93)
+			(xy 30.48 34.29) (xy 30.48 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "781f5001-ddf8-4d79-b438-831a5c42f3b1")
+	)
+	(wire
+		(pts
+			(xy 29.21 68.58) (xy 31.75 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82e70a2f-5ac3-4c27-9658-a34f3e756239")
+	)
+	(wire
+		(pts
+			(xy 39.37 67.31) (xy 39.37 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1174,27 +1194,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 41.91) (xy 30.48 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "924edd24-99b0-4920-bb42-4fcffcbb5dae")
-	)
-	(wire
-		(pts
-			(xy 30.48 45.72) (xy 30.48 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "948a32cc-4455-4873-8511-83aab7d65471")
-	)
-	(wire
-		(pts
-			(xy 38.1 74.93) (xy 38.1 77.47)
+			(xy 39.37 80.01) (xy 39.37 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1204,17 +1204,17 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 53.34) (xy 31.75 53.34)
+			(xy 49.53 68.58) (xy 49.53 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4259c40-865d-42f3-b648-52edeb417487")
+		(uuid "b1f6f6bf-d02e-40be-99f4-065d8b5d3adc")
 	)
 	(wire
 		(pts
-			(xy 50.8 53.34) (xy 48.26 53.34)
+			(xy 53.34 68.58) (xy 49.53 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1224,7 +1224,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 58.42) (xy 45.72 62.23)
+			(xy 46.99 63.5) (xy 46.99 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1244,7 +1244,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 74.93) (xy 30.48 74.93)
+			(xy 33.02 80.01) (xy 31.75 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1254,17 +1254,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 53.34) (xy 48.26 74.93)
+			(xy 31.75 68.58) (xy 31.75 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f05d6569-bea0-413d-a452-d87ae8d71d9f")
+		(uuid "f0d7f1c1-71ed-4d81-a460-fa1e134c4ff8")
 	)
 	(wire
 		(pts
-			(xy 48.26 53.34) (xy 45.72 53.34)
+			(xy 49.53 58.42) (xy 46.99 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1284,18 +1284,18 @@
 	)
 	(hierarchical_label "XTAL_32K_N"
 		(shape input)
-		(at 50.8 41.91 0)
+		(at 27.94 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "01131be2-3b13-4b8d-ba67-48e173fbbe84")
 	)
 	(hierarchical_label "XTAL_N"
 		(shape input)
-		(at 50.8 53.34 0)
+		(at 53.34 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1317,18 +1317,18 @@
 	)
 	(hierarchical_label "XTAL_P"
 		(shape input)
-		(at 50.8 45.72 0)
+		(at 29.21 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "81d68ea0-68c0-4cd6-b5cf-2e69015edfe0")
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:22pF_0402_50V_5%")
-		(at 34.29 74.93 90)
+		(at 35.56 80.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1338,8 +1338,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18756a09-d326-4047-9a0d-7cc8259ac477")
-		(property "Reference" "C12"
-			(at 34.2963 63.5 90)
+		(property "Reference" "C14"
+			(at 35.5663 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1349,7 +1349,7 @@
 			)
 		)
 		(property "Value" "22pF"
-			(at 34.2963 66.04 90)
+			(at 35.5663 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1359,7 +1359,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Capacitor:C_0402_1005Metric"
-			(at 45.72 74.93 0)
+			(at 46.99 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1370,7 +1370,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 50.8 74.93 0)
+			(at 52.07 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1381,7 +1381,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 53.34 74.93 0)
+			(at 54.61 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1392,7 +1392,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-25012"
-			(at 48.26 74.93 0)
+			(at 49.53 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1403,7 +1403,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 34.2963 68.58 90)
+			(at 35.5663 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1413,7 +1413,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 34.2963 71.12 90)
+			(at 35.5663 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1431,7 +1431,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/8e1dfb47-dddf-402c-b136-8c72d0253a57"
-					(reference "C12")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -1439,7 +1439,7 @@
 	)
 	(symbol
 		(lib_id "C3E40000121010X:C3E40000121010X")
-		(at 38.1 53.34 0)
+		(at 39.37 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1448,8 +1448,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76239ba3-def3-4581-9b2e-8c3f78820f48")
-		(property "Reference" "Y1"
-			(at 38.1 44.45 0)
+		(property "Reference" "Y2"
+			(at 39.37 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1459,7 +1459,7 @@
 			)
 		)
 		(property "Value" "C3E40000121010X"
-			(at 39.878 46.99 0)
+			(at 41.148 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1469,7 +1469,7 @@
 			)
 		)
 		(property "Footprint" "C3E40000121010X:XTAL_C3E40000121010X"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1481,7 +1481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1492,7 +1492,7 @@
 			)
 		)
 		(property "Description" "C3E Series 40 MHz ▒10 ppm 12 pF -40 to +85 ░C SMT Microprocessor Crystal Unit"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1504,7 +1504,7 @@
 			)
 		)
 		(property "MF" "Aker Technology"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1516,7 +1516,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "0.75mm"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1528,7 +1528,7 @@
 			)
 		)
 		(property "Package" "SMD-4 Aker"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1540,7 +1540,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1552,7 +1552,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/C3E40000121010X/Aker/view-part/?ref=eda"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1564,7 +1564,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1576,7 +1576,7 @@
 			)
 		)
 		(property "PARTREV" "August 01, 2022"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1588,7 +1588,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/C3E40000121010X/Aker/view-part/?ref=snap"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1600,7 +1600,7 @@
 			)
 		)
 		(property "MP" "C3E40000121010X"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1612,7 +1612,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1624,7 +1624,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Aker"
-			(at 38.1 53.34 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1650,7 +1650,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/8e1dfb47-dddf-402c-b136-8c72d0253a57"
-					(reference "Y1")
+					(reference "Y2")
 					(unit 1)
 				)
 			)
@@ -1658,7 +1658,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 38.1 77.47 0)
+		(at 39.37 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1668,8 +1668,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84871130-e884-49dc-b554-ff32678c4c82")
-		(property "Reference" "#PWR072"
-			(at 38.1 83.82 0)
+		(property "Reference" "#PWR076"
+			(at 39.37 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1680,7 +1680,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 81.28 0)
+			(at 39.37 86.36 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1690,7 +1690,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 77.47 0)
+			(at 39.37 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1701,7 +1701,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 77.47 0)
+			(at 39.37 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1712,7 +1712,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 86.36 0)
+			(at 39.37 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1728,7 +1728,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/8e1dfb47-dddf-402c-b136-8c72d0253a57"
-					(reference "#PWR072")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -1746,7 +1746,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b0ff249-a39b-4158-b959-ac6d96a5efdc")
-		(property "Reference" "C14"
+		(property "Reference" "C16"
 			(at 45.7263 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1839,7 +1839,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/8e1dfb47-dddf-402c-b136-8c72d0253a57"
-					(reference "C14")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -1856,7 +1856,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "943903b3-ade4-4366-81e7-04d87e8cf447")
-		(property "Reference" "Y2"
+		(property "Reference" "Y1"
 			(at 39.37 23.368 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2052,7 +2052,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/8e1dfb47-dddf-402c-b136-8c72d0253a57"
-					(reference "Y2")
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -2060,7 +2060,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:GND")
-		(at 39.37 39.37 180)
+		(at 39.37 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2070,8 +2070,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8704d36-ea86-4043-b2ad-162b8773a3c5")
-		(property "Reference" "#PWR073"
-			(at 39.37 33.02 0)
+		(property "Reference" "#PWR075"
+			(at 39.37 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2082,7 +2082,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 35.56 0)
+			(at 39.37 43.18 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2114,7 +2114,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 30.48 0)
+			(at 39.37 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2130,7 +2130,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/8e1dfb47-dddf-402c-b136-8c72d0253a57"
-					(reference "#PWR073")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -2148,7 +2148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbb577e7-f135-4608-aa9f-149afd6a064f")
-		(property "Reference" "C11"
+		(property "Reference" "C13"
 			(at 33.0263 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2241,7 +2241,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/8e1dfb47-dddf-402c-b136-8c72d0253a57"
-					(reference "C11")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -2249,7 +2249,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:22pF_0402_50V_5%")
-		(at 41.91 74.93 90)
+		(at 43.18 80.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2259,8 +2259,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fff29928-0de1-4a6d-85f6-d83e752ee811")
-		(property "Reference" "C13"
-			(at 41.9163 63.5 90)
+		(property "Reference" "C15"
+			(at 43.1863 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2270,7 +2270,7 @@
 			)
 		)
 		(property "Value" "22pF"
-			(at 41.9163 66.04 90)
+			(at 43.1863 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2280,7 +2280,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Capacitor:C_0402_1005Metric"
-			(at 53.34 74.93 0)
+			(at 54.61 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2291,7 +2291,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 58.42 74.93 0)
+			(at 59.69 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2302,7 +2302,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 60.96 74.93 0)
+			(at 62.23 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2313,7 +2313,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-25012"
-			(at 55.88 74.93 0)
+			(at 57.15 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2324,7 +2324,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 41.9163 68.58 90)
+			(at 43.1863 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2334,7 +2334,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 41.9163 71.12 90)
+			(at 43.1863 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2352,7 +2352,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/8e1dfb47-dddf-402c-b136-8c72d0253a57"
-					(reference "C13")
+					(reference "C15")
 					(unit 1)
 				)
 			)

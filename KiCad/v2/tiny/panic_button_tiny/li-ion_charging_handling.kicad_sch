@@ -2312,6 +2312,205 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PCM_4ms_Resistor:470k_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "470k_0603"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "4ms_Resistor:R_0603"
+				(at -2.54 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "470K, 1%, 1/10W, 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Specifications" "470K, 1%, 1/10W, 0603"
+				(at -2.54 -7.874 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Manufacturer" "Yageo"
+				(at -2.54 -9.398 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number" "RC0603FR-0747KL"
+				(at -2.54 -10.922 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Display" "470k"
+				(at 3.81 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "JLCPCB ID" "C23178"
+				(at 3.81 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "470k_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_* R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "470k_0603_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "470k_0603_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_LED_AKL:LED_1.8mm_SMD_Green"
 			(body_styles demorgan)
 			(pin_numbers
@@ -5113,6 +5312,147 @@
 		(uuid "d12c9109-64b5-4389-9d92-8cd91d7def9e")
 	)
 	(symbol
+		(lib_id "PCM_4ms_Resistor:470k_0603")
+		(at 111.76 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08106b51-3ea8-4aee-a18f-fe3bc52e38b5")
+		(property "Reference" "R6"
+			(at 114.3 59.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470k_0603"
+			(at 109.22 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 109.22 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "470K, 1%, 1/10W, 0603"
+			(at 111.76 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specifications" "470K, 1%, 1/10W, 0603"
+			(at 109.22 68.834 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 109.22 70.358 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number" "RC0603FR-0747KL"
+			(at 109.22 71.882 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Display" "470k"
+			(at 114.3 62.2299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB ID" "C23178"
+			(at 115.57 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b98bddbd-446f-4e7a-967b-8e30eb474377")
+		)
+		(pin "2"
+			(uuid "b159b221-7731-4f6b-9f7f-45cf0e86e1d6")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_SparkFun-Connector:TestPoint_1.25mm")
 		(at 54.61 34.29 90)
 		(unit 1)
@@ -5513,7 +5853,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59e1f7bc-714d-4ad5-88cd-f50519eb4581")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR066"
 			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -5573,7 +5913,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "#PWR063")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -5819,7 +6159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ea15d7c-98c1-437d-a28d-f6d3d0f37621")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 166.37 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5940,7 +6280,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R7")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5958,7 +6298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79e71a1b-1be7-4ee2-a08d-c06049f800dc")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR067"
 			(at 172.72 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6018,7 +6358,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "#PWR064")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -6150,7 +6490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82288fcc-f9f3-44c1-8541-260fce292459")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR064"
 			(at 135.89 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6210,7 +6550,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "#PWR061")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -6344,7 +6684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b330a0f-4cf4-4f66-a21b-92a548dc1a40")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 208.28 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6467,7 +6807,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R9")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -6671,7 +7011,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99685ad3-f93d-4262-80c7-50121d8d6901")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR069"
 			(at 187.96 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6731,7 +7071,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "#PWR066")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -6815,6 +7155,147 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_4ms_Resistor:470k_0603")
+		(at 118.11 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6c32295-8f7d-4ce8-ae57-bc479e383e72")
+		(property "Reference" "R7"
+			(at 120.65 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470k_0603"
+			(at 115.57 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 115.57 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "470K, 1%, 1/10W, 0603"
+			(at 118.11 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specifications" "470K, 1%, 1/10W, 0603"
+			(at 115.57 59.944 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 115.57 61.468 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number" "RC0603FR-0747KL"
+			(at 115.57 62.992 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Display" "470k"
+			(at 120.65 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB ID" "C23178"
+			(at 121.92 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b87d6a4c-c743-40b5-8ffc-764b5efc58b0")
+		)
+		(pin "2"
+			(uuid "0be928e2-44bb-4fae-9d15-ac5dd94840e6")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_4ms_Resistor:1k_0603")
 		(at 166.37 52.07 90)
 		(unit 1)
@@ -6826,7 +7307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab8afd5a-7147-4652-a0f3-715302d5af74")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 166.37 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6947,7 +7428,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -6965,7 +7446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac4753fa-23fd-416b-b1ae-1ae31380669d")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR068"
 			(at 186.69 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7025,7 +7506,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "#PWR065")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -7135,7 +7616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba236112-60b8-4f81-b500-c54dc1f53a29")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR065"
 			(at 148.59 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7195,7 +7676,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "#PWR062")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -7213,7 +7694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba6e5ba8-278b-45b7-9966-e3fd269da185")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 198.12 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7336,7 +7817,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R8")
+					(reference "R10")
 					(unit 1)
 				)
 			)

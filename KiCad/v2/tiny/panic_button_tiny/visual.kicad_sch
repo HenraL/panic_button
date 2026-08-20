@@ -788,7 +788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e3efef9-708b-422e-a8b5-70a9516c4f07")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR072"
 			(at 19.05 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -848,7 +848,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/a5c86ac0-c7fd-4e96-b586-e8495a668fc4"
-					(reference "#PWR069")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -866,7 +866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71e428b2-ebca-4343-8443-2c83f5aada85")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR071"
 			(at 19.05 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -926,7 +926,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/a5c86ac0-c7fd-4e96-b586-e8495a668fc4"
-					(reference "#PWR068")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -1041,7 +1041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f358ab1e-a466-4e92-b199-392cb500c12a")
-		(property "Reference" "C10"
+		(property "Reference" "C12"
 			(at 25.4 31.7499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1105,7 +1105,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/a5c86ac0-c7fd-4e96-b586-e8495a668fc4"
-					(reference "C10")
+					(reference "C12")
 					(unit 1)
 				)
 			)

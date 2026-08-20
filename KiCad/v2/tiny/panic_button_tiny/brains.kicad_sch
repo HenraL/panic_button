@@ -1820,6 +1820,26 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 77.47) (xy 86.36 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b1416d4-3dbf-46cb-a8ef-a7fcce56df52")
+	)
+	(wire
+		(pts
+			(xy 76.2 74.93) (xy 86.36 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "118a5630-75ec-4d73-bb7c-6c9f909799e2")
+	)
+	(wire
+		(pts
 			(xy 153.67 46.99) (xy 153.67 52.07)
 		)
 		(stroke
@@ -1877,16 +1897,6 @@
 			(type default)
 		)
 		(uuid "23f84a8a-ad40-472a-a7fc-90157ced4318")
-	)
-	(wire
-		(pts
-			(xy 76.2 74.93) (xy 86.36 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30b66523-9507-48ba-ba9a-8a39760f0d26")
 	)
 	(wire
 		(pts
@@ -2320,16 +2330,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 77.47) (xy 86.36 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd4b63c3-5c07-4e9e-b20e-48215d7c3192")
-	)
-	(wire
-		(pts
 			(xy 109.22 25.4) (xy 109.22 22.86)
 		)
 		(stroke
@@ -2561,7 +2561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09fef4da-64a1-4fca-9c3f-3f67c3c2e134")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR061"
 			(at 166.37 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -2621,7 +2621,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR058")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -2639,7 +2639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cbf8778-b16e-47d9-ab48-44aa79c75e1d")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 123.19 36.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2703,7 +2703,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -2859,7 +2859,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22bf51e5-aede-4ca3-9cfb-f27dfc84ed22")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR058"
 			(at 99.06 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -2919,7 +2919,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR055")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -2937,7 +2937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cf34e2c-87dc-4420-a8ed-a023430517eb")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR057"
 			(at 71.12 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -2997,7 +2997,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR054")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -3015,7 +3015,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43f4ea81-bb62-4415-93fc-e02debf19301")
-		(property "Reference" "C6"
+		(property "Reference" "C8"
 			(at 107.95 19.0499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3079,7 +3079,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "C6")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -3246,7 +3246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "790c3c46-7591-4064-834c-47e1e400cf1d")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR060"
 			(at 140.97 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -3306,7 +3306,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR057")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -3413,7 +3413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8363b4c8-e13e-45f9-819d-46727bcc1ea3")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR055"
 			(at 34.29 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -3473,7 +3473,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR052")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -3491,7 +3491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ac34501-b16c-4096-8f96-db14ebd527f6")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR063"
 			(at 199.39 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3551,7 +3551,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR060")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -3658,7 +3658,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98bf9441-2e4c-4efd-b711-cd12798e9eea")
-		(property "Reference" "C7"
+		(property "Reference" "C9"
 			(at 113.03 26.6699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3722,7 +3722,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "C7")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -3740,7 +3740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a150505a-4bb9-4bf1-8847-237f4f8bc4cf")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR062"
 			(at 180.34 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -3800,7 +3800,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR059")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -3818,7 +3818,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a577b03e-4adc-42c7-9b55-c8c6aa9f3000")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR059"
 			(at 109.22 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -3878,7 +3878,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR056")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -4134,7 +4134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc43a737-e306-4d5f-9dc4-72914a02495a")
-		(property "Reference" "C8"
+		(property "Reference" "C10"
 			(at 118.11 31.7499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4198,7 +4198,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "C8")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4391,7 +4391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbb60dad-31e7-4146-98a9-3dba4ee2340c")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR056"
 			(at 43.18 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4451,7 +4451,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e"
-					(reference "#PWR053")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -4505,9 +4505,9 @@
 				(justify right)
 			)
 		)
-		(pin "UART_GPIO9" output
-			(at 137.16 109.22 180)
-			(uuid "afab14d9-d731-4d4b-adb3-a7352379f495")
+		(pin "UART_U0TXD" output
+			(at 137.16 111.76 180)
+			(uuid "a6a3914a-f04d-40ba-a32f-9fb9c83c1791")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,8 +4516,8 @@
 			)
 		)
 		(pin "UART_U0RXD" output
-			(at 137.16 114.3 180)
-			(uuid "8da4fe93-47f5-489d-acc5-40c2e9deda4e")
+			(at 137.16 109.22 180)
+			(uuid "f826fce2-86cc-4ffc-ba5d-ff79f7f88699")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4525,9 +4525,9 @@
 				(justify left)
 			)
 		)
-		(pin "UART_U0TXD" output
-			(at 137.16 111.76 180)
-			(uuid "a6a3914a-f04d-40ba-a32f-9fb9c83c1791")
+		(pin "UART_GPIO9" output
+			(at 137.16 114.3 180)
+			(uuid "66fb11d9-aea7-4781-b99c-44231fc4125a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4582,7 +4582,7 @@
 			)
 		)
 		(pin "XTAL_32K_N" input
-			(at 76.2 74.93 0)
+			(at 76.2 77.47 0)
 			(uuid "5fabf65e-a07f-4bfa-a530-19ae13df3052")
 			(effects
 				(font
@@ -4592,7 +4592,7 @@
 			)
 		)
 		(pin "XTAL_32K_P" input
-			(at 76.2 77.47 0)
+			(at 76.2 74.93 0)
 			(uuid "03a2020f-6b37-4e41-9b4b-ff48d9093690")
 			(effects
 				(font

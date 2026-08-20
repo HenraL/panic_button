@@ -30,7 +30,7 @@
 -- PROJECT: AsperHeader
 -- FILE: AGENTS.md
 -- CREATION DATE: 03-08-2026
--- LAST Modified: 1:7:22 03-08-2026
+-- LAST Modified: 19:20:23 20-08-2026
 -- DESCRIPTION:
 -- A small panic beacon (target size: no bigger than a finger, a palm if that can't be reached) that
 -- reports its position to a server, falls back to SMS when no server is reachable, and always
@@ -75,6 +75,7 @@ A **panic beacon** — a small device (target: no bigger than a finger; a palm i
 
 - Active design: `KiCad/v2/tiny/panic_button_tiny` (KiCad 10, v2 "tiny" variant).
 - Do **not** edit KiCad schematics/PCBs (`*.kicad_sch`, `*.kicad_pcb`) — the owner handles the design. Creating new library symbols/footprints is the only allowed exception.
+- **Schematic change proposals: ASCII only, or a sibling file — never in place.** Even when the owner asks you to "update the schematic", never overwrite their `*.kicad_sch`/`*.kicad_pcb`: draw the wiring as an ASCII diagram in the response (and/or the ledger), or produce a modified copy next to the original (e.g. `modem_rail.FIXED.kicad_sch`) so the owner can compare and apply it themselves in KiCad. The owner applies all schematic edits by hand.
 - Live BOM: `KiCad/v2/tiny/bom.md` — strictly the bill of materials, prices are estimates; design decisions / ideas / open questions: `KiCad/v2/tiny/design.md`. Keep both in sync whenever the BOM or decisions change.
 - Platform: **ESP32-C3** (MCU + BLE 5.0) + **SIM7670G** LTE Cat1 module (4G, built-in GNSS, SMS + HTTP via AT commands, IoT M2M SIM).
 - Motion: MEMS accelerometer with wake-on-motion interrupt wakes the MCU from deep sleep ("if movement" trigger) — neither the C3 nor the modem senses motion.

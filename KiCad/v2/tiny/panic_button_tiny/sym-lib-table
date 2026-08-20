@@ -6,4 +6,6 @@
 	(lib (name "8205A") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/8205A/8205A.kicad_sym") (options "") (descr ""))
 	(lib (name "CTS3-32.768-12.5-20-R") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/CTS3-32.768-12.5-20-R/CTS3-32.768-12.5-20-R.kicad_sym") (options "") (descr ""))
 	(lib (name "PKLCS1212E4001-R1") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/PKLCS1212E4001-R1/PKLCS1212E4001-R1.kicad_sym") (options "") (descr ""))
+	(lib (name "RC0603FR-07330KL") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/RC0603FR-07_330KL/RC0603FR-07330KL.kicad_sym") (options "") (descr ""))
+	(lib (name "RC0603FR-0747KL") (type "KiCad") (uri "/home/hanra/Documents/001_github/henral/snap_magic/RC0603FR-0747KL/RC0603FR-0747KL.kicad_sym") (options "") (descr ""))
 )

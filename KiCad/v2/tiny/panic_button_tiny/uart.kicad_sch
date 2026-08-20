@@ -1338,7 +1338,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37e81008-8728-45f1-bdf6-532e3a713785")
-		(property "Reference" "R13"
+		(property "Reference" "R15"
 			(at 44.45 21.844 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1459,7 +1459,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/6bd96638-a0ba-4dc0-955f-d7671e306c1b"
-					(reference "R13")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -1632,7 +1632,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "650d4bb8-16d9-4423-9ade-65cda7ce5338")
-		(property "Reference" "R12"
+		(property "Reference" "R14"
 			(at 36.83 19.304 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1753,7 +1753,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/525ab16f-d6f3-4728-a011-f4f1ced9fd5e/6bd96638-a0ba-4dc0-955f-d7671e306c1b"
-					(reference "R12")
+					(reference "R14")
 					(unit 1)
 				)
 			)

@@ -5323,7 +5323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08106b51-3ea8-4aee-a18f-fe3bc52e38b5")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 114.3 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5446,7 +5446,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -6159,7 +6159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ea15d7c-98c1-437d-a28d-f6d3d0f37621")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 166.37 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6280,7 +6280,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R9")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -6684,7 +6684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b330a0f-4cf4-4f66-a21b-92a548dc1a40")
-		(property "Reference" "R11"
+		(property "Reference" "R13"
 			(at 208.28 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6807,7 +6807,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R11")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7166,7 +7166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6c32295-8f7d-4ce8-ae57-bc479e383e72")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 120.65 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7289,7 +7289,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R7")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -7307,7 +7307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab8afd5a-7147-4652-a0f3-715302d5af74")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 166.37 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7428,7 +7428,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R8")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -7694,7 +7694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba6e5ba8-278b-45b7-9966-e3fd269da185")
-		(property "Reference" "R10"
+		(property "Reference" "R12"
 			(at 198.12 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7817,7 +7817,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/bf7d15b7-3a35-46fb-a5a6-5ea810f2dc2c/4988fc48-ac14-475f-a329-fd119eb80de7"
-					(reference "R10")
+					(reference "R12")
 					(unit 1)
 				)
 			)

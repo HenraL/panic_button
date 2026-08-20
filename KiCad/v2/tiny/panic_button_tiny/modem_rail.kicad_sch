@@ -878,6 +878,602 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "RC0603FR-07330KL:RC0603FR-07330KL"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at -7.6244 2.5415 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "RC0603FR-07330KL"
+				(at -7.63 -5.0866 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "RC0603FR-07_330KL:RESC1608X55N"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "330 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Yageo"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Package" "0603-2 YAGEO"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/RC0603FR-07%20330KL/Yageo/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "RC0603FR-07 330KL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/RC0603FR-07%20330KL/Yageo/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "RC0603FR-07330KL_0_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -4.445 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 1.905) (xy -3.175 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -1.905) (xy -1.905 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 1.905) (xy -0.635 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 1.905 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -1.905) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 1.905) (xy 4.445 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 -1.905) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RC0603FR-0747KL:RC0603FR-0747KL"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at -3.814 2.0087 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "RC0603FR-0747KL"
+				(at -3.8111 -3.557 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "RC0603FR-0747KL:RESC1608X55"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "47 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Yageo"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Package" "SMD-2 Yageo"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/RC0603FR-0747KL/Yageo/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/RC0603FR-0747KL/Yageo/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "RC0603FR-0747KL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "YAGEO"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "RC0603FR-0747KL_0_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -3.81 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 3.81 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+BATT"
 			(power global)
 			(pin_numbers
@@ -1158,16 +1754,28 @@
 		(uuid "2132675f-71a7-4064-b4d6-b7bec71d789a")
 	)
 	(junction
-		(at 67.31 48.26)
+		(at 82.55 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "56a94152-eb76-400f-96e8-7c76e50e4492")
+		(uuid "23f105b6-dc2d-4012-b84f-4f4c1de77788")
 	)
 	(junction
-		(at 71.12 48.26)
+		(at 105.41 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4363c77a-6cce-4c75-b07a-54a0fd24357d")
+	)
+	(junction
+		(at 113.03 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6187152-882f-4b0e-b94a-6759cb1e1789")
+	)
+	(junction
+		(at 52.07 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc0cb349-4053-46fe-ac00-b41fe919899d")
 	)
 	(wire
 		(pts
@@ -1181,7 +1789,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 59.69) (xy 71.12 53.34)
+			(xy 113.03 59.69) (xy 113.03 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1191,7 +1799,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 50.8) (xy 67.31 48.26)
+			(xy 105.41 50.8) (xy 105.41 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1201,13 +1809,13 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 48.26) (xy 71.12 48.26)
+			(xy 52.07 62.23) (xy 52.07 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41770a66-394b-4585-a9aa-5d4219e509bd")
+		(uuid "1eefb413-92a3-4454-9e77-8af0918659e7")
 	)
 	(wire
 		(pts
@@ -1251,16 +1859,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 48.26) (xy 67.31 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84b26867-8aa5-4dde-b18b-7a7c3703a537")
-	)
-	(wire
-		(pts
 			(xy 52.07 66.04) (xy 57.15 66.04)
 		)
 		(stroke
@@ -1291,6 +1889,46 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 48.26) (xy 105.41 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93cc0a33-ad67-46ee-9c10-eaaa3d4932f5")
+	)
+	(wire
+		(pts
+			(xy 82.55 62.23) (xy 82.55 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ba72b6-2411-42b5-bac8-50ee51b66abc")
+	)
+	(wire
+		(pts
+			(xy 52.07 62.23) (xy 64.77 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c5d735f-3db8-4a3c-9200-f6dc4f1e81d6")
+	)
+	(wire
+		(pts
+			(xy 80.01 62.23) (xy 82.55 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a81a0098-4faf-44f0-81a9-27b2a878ba0b")
+	)
+	(wire
+		(pts
 			(xy 57.15 38.1) (xy 57.15 40.64)
 		)
 		(stroke
@@ -1301,7 +1939,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 66.04) (xy 52.07 55.88)
+			(xy 52.07 66.04) (xy 52.07 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1311,13 +1949,23 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 59.69) (xy 71.12 59.69)
+			(xy 116.84 59.69) (xy 113.03 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b2f02d21-b864-4d96-b521-52215be89e3a")
+	)
+	(wire
+		(pts
+			(xy 82.55 50.8) (xy 85.09 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c32f00f7-ca42-4e59-8f68-a402ebfc2d13")
 	)
 	(wire
 		(pts
@@ -1331,6 +1979,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 48.26) (xy 113.03 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf813c63-2446-4f0e-8ec5-75eca0071e34")
+	)
+	(wire
+		(pts
 			(xy 41.91 52.07) (xy 38.1 52.07)
 		)
 		(stroke
@@ -1341,7 +1999,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 48.26) (xy 78.74 48.26)
+			(xy 113.03 48.26) (xy 120.65 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1351,13 +2009,13 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 50.8) (xy 67.31 50.8)
+			(xy 62.23 50.8) (xy 82.55 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ffdb30cb-bd28-470d-8692-696f650ab739")
+		(uuid "f1ecbc2e-98be-4584-97ed-4c4e2b7abb59")
 	)
 	(hierarchical_label "modem_rail_switch"
 		(shape input)
@@ -1629,7 +2287,7 @@
 	)
 	(symbol
 		(lib_id "PCM_4ms_Capacitor:22uF_0603_16V")
-		(at 71.12 50.8 0)
+		(at 113.03 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1640,7 +2298,7 @@
 		(fields_autoplaced yes)
 		(uuid "25dd3661-2308-4d3c-9f04-f94446a6f134")
 		(property "Reference" "C7"
-			(at 73.66 49.5362 0)
+			(at 115.57 49.5362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1651,7 +2309,7 @@
 			)
 		)
 		(property "Value" "22uF_0603_16V"
-			(at 71.12 46.99 0)
+			(at 113.03 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1662,7 +2320,7 @@
 			)
 		)
 		(property "Footprint" "4ms_Capacitor:C_0805"
-			(at 68.58 55.88 0)
+			(at 110.49 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1674,7 +2332,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 50.8 0)
+			(at 113.03 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1685,7 +2343,7 @@
 			)
 		)
 		(property "Description" "22uF, 16V,10%,X5R or X7R,0603"
-			(at 71.12 50.8 0)
+			(at 113.03 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1696,7 +2354,7 @@
 			)
 		)
 		(property "Specifications" "22uF, 16V,10%,X5R or X7R,0603"
-			(at 68.58 58.674 0)
+			(at 110.49 58.674 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1708,7 +2366,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 68.58 60.198 0)
+			(at 110.49 60.198 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1720,7 +2378,7 @@
 			)
 		)
 		(property "Part Number" "GRM219R61C226ME15K"
-			(at 68.58 61.722 0)
+			(at 110.49 61.722 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1732,7 +2390,7 @@
 			)
 		)
 		(property "Display" "22uF/16V"
-			(at 73.66 52.0762 0)
+			(at 115.57 52.0762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1759,7 +2417,7 @@
 	)
 	(symbol
 		(lib_id "power:-BATT")
-		(at 74.93 59.69 0)
+		(at 116.84 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1770,7 +2428,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d11866e-cdc2-466b-b8f4-584ec3c7721b")
 		(property "Reference" "#PWR053"
-			(at 74.93 63.5 0)
+			(at 116.84 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1781,7 +2439,7 @@
 			)
 		)
 		(property "Value" "-BATT"
-			(at 74.93 54.61 0)
+			(at 116.84 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1791,7 +2449,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 59.69 0)
+			(at 116.84 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1802,7 +2460,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 59.69 0)
+			(at 116.84 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1813,7 +2471,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 74.93 59.69 0)
+			(at 116.84 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2063,6 +2721,350 @@
 		)
 	)
 	(symbol
+		(lib_id "RC0603FR-0747KL:RC0603FR-0747KL")
+		(at 72.39 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8647ec51-2157-447c-ad44-99c377d31fe5")
+		(property "Reference" "R3"
+			(at 72.39 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RC0603FR-0747KL"
+			(at 72.39 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RC0603FR-0747KL:RESC1608X55"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "47 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Yageo"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-2 Yageo"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/RC0603FR-0747KL/Yageo/view-part/?ref=eda"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/RC0603FR-0747KL/Yageo/view-part/?ref=snap"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "RC0603FR-0747KL"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO"
+			(at 72.39 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "429a30c4-dacd-49f5-8d68-6b4e96bbd277")
+		)
+		(pin "2"
+			(uuid "7649bd12-636d-4d6c-a6f7-9959c527b99a")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/5fcd7ab2-c492-450d-9345-ebba8273bb1f"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RC0603FR-07330KL:RC0603FR-07330KL")
+		(at 95.25 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5e5d665-10cc-4393-99f1-e322670cf6a6")
+		(property "Reference" "R4"
+			(at 95.25 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RC0603FR-07330KL"
+			(at 95.25 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RC0603FR-07_330KL:RESC1608X55N"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "330 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Yageo"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "0603-2 YAGEO"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/RC0603FR-07%20330KL/Yageo/view-part/?ref=snap"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "RC0603FR-07 330KL"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/RC0603FR-07%20330KL/Yageo/view-part/?ref=eda"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "406dae3e-fc94-46bb-93a6-e3d0654c6b2c")
+		)
+		(pin "2"
+			(uuid "0e0d9ed0-2bcd-4b67-af70-df727a936b16")
+		)
+		(instances
+			(project "panic_button_tiny"
+				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/5fcd7ab2-c492-450d-9345-ebba8273bb1f"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:-BATT")
 		(at 57.15 66.04 0)
 		(unit 1)
@@ -2220,7 +3222,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-PowerSymbol:VBATT")
-		(at 78.74 48.26 0)
+		(at 120.65 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2231,7 +3233,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecaa9cd7-b2a8-4d8d-972f-e8e5c3b76488")
 		(property "Reference" "#PWR054"
-			(at 78.74 52.07 0)
+			(at 120.65 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2242,7 +3244,7 @@
 			)
 		)
 		(property "Value" "VBATT"
-			(at 78.74 44.45 0)
+			(at 120.65 44.45 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2252,7 +3254,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 48.26 0)
+			(at 120.65 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2263,7 +3265,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 48.26 0)
+			(at 120.65 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2274,7 +3276,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBATT\""
-			(at 78.74 54.61 0)
+			(at 120.65 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1763,7 +1763,7 @@
 		(at 113.03 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ac74242b-b33a-4010-9cc8-f0693449a14a")
+		(uuid "b91df2ba-7b7d-43ca-a3a9-67f2ab111e49")
 	)
 	(junction
 		(at 110.49 48.26)
@@ -1879,6 +1879,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 57.15) (xy 113.03 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c6133dd-4c34-473c-9fb9-687e9140ac47")
+	)
+	(wire
+		(pts
 			(xy 82.55 58.42) (xy 85.09 58.42)
 		)
 		(stroke
@@ -1909,7 +1919,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 52.07) (xy 113.03 48.26)
+			(xy 113.03 50.8) (xy 113.03 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1949,6 +1959,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 57.15) (xy 127 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a534d89c-7113-4f6e-9e7b-adc1f8972708")
+	)
+	(wire
+		(pts
 			(xy 57.15 38.1) (xy 57.15 40.64)
 		)
 		(stroke
@@ -1956,16 +1976,6 @@
 			(type default)
 		)
 		(uuid "aff05135-5cf1-4844-9970-5a28ee45573a")
-	)
-	(wire
-		(pts
-			(xy 127 57.15) (xy 113.03 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2f02d21-b864-4d96-b521-52215be89e3a")
 	)
 	(wire
 		(pts
@@ -2317,7 +2327,7 @@
 	)
 	(symbol
 		(lib_id "PCM_4ms_Capacitor:22uF_0603_16V")
-		(at 113.03 54.61 0)
+		(at 113.03 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2328,7 +2338,7 @@
 		(fields_autoplaced yes)
 		(uuid "25dd3661-2308-4d3c-9f04-f94446a6f134")
 		(property "Reference" "C7"
-			(at 115.57 53.3462 0)
+			(at 115.57 52.0762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2339,7 +2349,7 @@
 			)
 		)
 		(property "Value" "22uF_0603_16V"
-			(at 113.03 50.8 0)
+			(at 113.03 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2350,7 +2360,7 @@
 			)
 		)
 		(property "Footprint" "4ms_Capacitor:C_0805"
-			(at 110.49 59.69 0)
+			(at 110.49 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2362,7 +2372,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 54.61 0)
+			(at 113.03 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2373,7 +2383,7 @@
 			)
 		)
 		(property "Description" "22uF, 16V,10%,X5R or X7R,0603"
-			(at 113.03 54.61 0)
+			(at 113.03 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2384,7 +2394,7 @@
 			)
 		)
 		(property "Specifications" "22uF, 16V,10%,X5R or X7R,0603"
-			(at 110.49 62.484 0)
+			(at 110.49 61.214 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2396,7 +2406,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 110.49 64.008 0)
+			(at 110.49 62.738 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2408,7 +2418,7 @@
 			)
 		)
 		(property "Part Number" "GRM219R61C226ME15K"
-			(at 110.49 65.532 0)
+			(at 110.49 64.262 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2420,7 +2430,7 @@
 			)
 		)
 		(property "Display" "22uF/16V"
-			(at 115.57 55.8862 0)
+			(at 115.57 54.6162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2457,7 +2467,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d11866e-cdc2-466b-b8f4-584ec3c7721b")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR055"
 			(at 127 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -2517,7 +2527,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/5fcd7ab2-c492-450d-9345-ebba8273bb1f"
-					(reference "#PWR054")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -3105,7 +3115,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6e01de6-7b1d-46f5-8f67-298691cebe78")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR053"
 			(at 57.15 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3165,7 +3175,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/5fcd7ab2-c492-450d-9345-ebba8273bb1f"
-					(reference "#PWR052")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -3182,7 +3192,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e628f233-9e41-42d3-8c29-72ad969bede0")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR051"
 			(at 46.99 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -3242,7 +3252,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/5fcd7ab2-c492-450d-9345-ebba8273bb1f"
-					(reference "#PWR055")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -3260,7 +3270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7ce3759-8141-48e3-a8df-ea5d32864235")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR052"
 			(at 52.07 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3320,7 +3330,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/5fcd7ab2-c492-450d-9345-ebba8273bb1f"
-					(reference "#PWR051")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -3338,7 +3348,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecaa9cd7-b2a8-4d8d-972f-e8e5c3b76488")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR054"
 			(at 114.3 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3398,7 +3408,7 @@
 		(instances
 			(project "panic_button_tiny"
 				(path "/c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601/5fcd7ab2-c492-450d-9345-ebba8273bb1f"
-					(reference "#PWR053")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)

@@ -661,7 +661,7 @@
         "uuid": "c4eb92e9-b42f-4db0-b1d9-0ef70f7ca601"
       }
     ],
-    "used_designators": "C1-18,D1,U1-8,BZ1,SW1-4,L1-2,LED1-2,R1-15,TP1-13,LS1,#PWR1-77,Y1-4,BT1,J1-3,E1,Q1-2",
+    "used_designators": "LS1,SW1-5,L1-2,BT1-3,#PWR1-84,Y1-4,C1-18,J1-3,E1,BZ1,D1,U1-13,Q1-2,LED1-4,TP1-24,R1-21",
     "variants": []
   },
   "sheets": [
@@ -712,6 +712,10 @@
     [
       "8e1dfb47-dddf-402c-b136-8c72d0253a57",
       "Clock"
+    ],
+    [
+      "500edd80-d56c-44b4-b7d4-32e5f896224a",
+      "Li-ion charging handling1"
     ]
   ],
   "text_variables": {},
